@@ -11,7 +11,7 @@ function checkQ1() {
 
 	if (document.question1.question.value == "NREM1") {
 		document.getElementById("after_submitQ1").style.visibility = "visible";
-		document.getElementById("answerQ1").innerHTML = "No! <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ1").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
 		document.getElementById("after_submitQ1").style.background = "red";
 		document.getElementById("answerQ1_picture").src = "EEG1_img/vertexwaves1.png";
 		document.getElementById("afterQ1_picture").innerHTML = "El EEG muestra ondas agudas del vertex señaladas con flechas rojas. ¿Ves esos elementos en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
@@ -64,7 +64,7 @@ function checkQ2() {
 
 	} else {
 		document.getElementById("after_submitQ2").style.visibility = "visible";
-		document.getElementById("answerQ2").innerHTML = "Not correct. <br><br> Asegúrate de que has señalado todas las respuestas correctas y no has señalado ninguna de las respuestas incorrectas.";
+		document.getElementById("answerQ2").innerHTML = "No. <br><br> Asegúrate de que has señalado todas las respuestas correctas y no has señalado ninguna de las respuestas incorrectas.";
 		document.getElementById("after_submitQ2").style.background = "red";
 		document.getElementById("answerQ2_picture").src = "";
 		document.getElementById("afterQ2_picture").innerHTML = "<br><br> ¡Inténtalo de nuevo!";
@@ -95,7 +95,7 @@ function checkQ3() {
 
 	if (document.question3.question.value == "NREM1") {
 		document.getElementById("after_submitQ3").style.visibility = "visible";
-		document.getElementById("answerQ3").innerHTML = "Correct! <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ3").innerHTML = "Correcto. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
 		document.getElementById("after_submitQ3").style.background = "lightgreen";
 		document.getElementById("answerQ3_picture").src = "EEG1_img/Q3.2.png";
 		document.getElementById("afterQ3_picture").innerHTML = "El EEG muestra una onda aguda del vertex señalada con flechas rojas. Se puede intuir un ritmo posterior dominante en el rectángulo rojo. Otra de las características del adormecimiento es la progresiva desaparición del ritmo posterior dominante y aparición de ondas agudas del vertex. <br><br> ¡Muy bien!";
@@ -141,14 +141,14 @@ function checkQ4() {
 
 	if (document.getElementById("q4PDR").checked == false && document.getElementById("q4SNOVW").checked == false && document.getElementById("q4S").checked == true && document.getElementById("q4MA").checked == false && document.getElementById("q4VW").checked == true) {
 		document.getElementById("after_submitQ4").style.visibility = "visible";
-		document.getElementById("answerQ4").innerHTML = "Correct! <br><br> Los elementos más característicos de la fase II del sueño son los husos del sueño.";
+		document.getElementById("answerQ4").innerHTML = "Correcto. <br><br> Los elementos más característicos de la fase II del sueño son los husos del sueño.";
 		document.getElementById("after_submitQ4").style.background = "lightgreen";
 		document.getElementById("answerQ4_picture").src = "EEG1_img/Q4.2.png";
 		document.getElementById("afterQ4_picture").innerHTML = "Los husos del sueño se señalan dentro de los rectángulos. Las flechas señalan a las ondas agudas del vertex, que también se ven en la fase II del sueño. Este EEG es típico de fase II del sueño. <br><br> ¡Muy bien!";
 
 	} else {
 		document.getElementById("after_submitQ4").style.visibility = "visible";
-		document.getElementById("answerQ4").innerHTML = "Not correct. <br><br> Asegúrate de marcar todas las opciones correctas y no marcar ninguna opción incorrecta.";
+		document.getElementById("answerQ4").innerHTML = "No. <br><br> Asegúrate de marcar todas las opciones correctas y no marcar ninguna opción incorrecta.";
 		document.getElementById("after_submitQ4").style.background = "red";
 		document.getElementById("answerQ4_picture").src = "";
 		document.getElementById("afterQ4_picture").innerHTML = "<br><br> ¡Inténtalo de nuevo!";
@@ -178,7 +178,7 @@ function checkQ5() {
 
 	if (document.question5.question.value == "NREM1") {
 		document.getElementById("after_submitQ5").style.visibility = "visible";
-		document.getElementById("answerQ5").innerHTML = "Correct! <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ5").innerHTML = "Correcto. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
 		document.getElementById("after_submitQ5").style.background = "lightgreen";
 		document.getElementById("answerQ5_picture").src = "EEG1_img/Q5.2.png";
 		document.getElementById("afterQ5_picture").innerHTML = "El EEG muestra una onda aguda del vertex con una flecha roja. Los rectángulos también muestran otro elemento del adormecimiento: los ojos se mueven lentamente de un lado a otro causando que los canales frontales aparezcan más anchos (cuando la córnea se acerca al electrodo en ese lado) o estrechos (cuando la retina se acerca al electrodo en ese lado). <br><br> ¡Muy bien!";
@@ -187,7 +187,7 @@ function checkQ5() {
 
 	if (document.question5.question.value == "NREM2") {
 		document.getElementById("after_submitQ5").style.visibility = "visible";
-		document.getElementById("answerQ5").innerHTML = "No, sorry! <br><br> Los elementos más característicos de la fase II son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ5").innerHTML = "No. <br><br> Los elementos más característicos de la fase II son las ondas agudas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ5").style.background = "red";
 		document.getElementById("answerQ5_picture").src = "EEG1_img/spindles1.png";
 		document.getElementById("afterQ5_picture").innerHTML = "El EEG muestra husos del sueño marcadas por flechas rojas. ¿Los ves en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
