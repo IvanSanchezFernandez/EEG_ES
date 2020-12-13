@@ -289,3 +289,60 @@ function checkQ8() {
 
 }
 
+
+
+
+
+
+
+
+function checkQ9() {
+
+	if (document.question9.question.value == "a") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "¡Correcto!<br><br>";
+		document.getElementById("after_submitQ9").style.background = "lightgreen";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "Exáctamente. El ritmo posterior dominante aparece durante la vigilia cuando el paciente está relajado, con los ojos cerrados o no fijándose en nada. Por lo tanto, incluso durante la vigilia el ritmo posterior dominante puede no aparecer si no se dan esas condiciones.<br><br> ¡Muy bien!";
+
+}
+
+	if (document.question9.question.value == "b") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "Incorrecto. <br><br>";
+		document.getElementById("after_submitQ9").style.background = "red";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "A pesar de que el ritmo posterior dominante aparece en la mayoría de EEGs (en gran parte gracias a los técnicos que le piden al paciente que cierre los ojos y se relaje), puede que no aparezca y esto no hace el EEG anormal necesariamente.<br><br> ¡Inténtalo de nuevo!";
+
+}
+
+	if (document.question9.question.value == "c") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "Incorrecto. <br><br>";
+		document.getElementById("after_submitQ9").style.background = "red";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "No. El ritmo posterior dominante no aparece durante el sueño.<br><br> ¡Inténtalo de nuevo!";
+
+}
+
+	if (document.question9.question.value == "d") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "No. <br><br>";
+		document.getElementById("after_submitQ9").style.background = "red";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "El ritmo posterior dominante no aparece en ningún momento en particular después del comienzo de la vigilia. Al contrario que algunas fases del sueño (que aparecen cierto tiempo después de dormirse), el ritmo posterior dominante puede aparecer en cualquier momento durante la vigilia. <br><br> ¡Inténtalo de nuevo!";
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
