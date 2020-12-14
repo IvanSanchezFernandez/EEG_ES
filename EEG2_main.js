@@ -200,7 +200,7 @@ function checkQ6() {
 
 function checkQ7() {
 
-	if (document.question6.question.value == "a") {
+	if (document.question7.question.value == "a") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "No.";
 		document.getElementById("after_submitQ7").style.background = "red";
@@ -213,14 +213,14 @@ function checkQ7() {
 	if (document.question7.question.value == "b") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "¡Correcto! <br><br> Este EEG tiene un ritmo posterior dominante ligeramente asimétrico.";
-		document.getElementById("after_submitQ7").style.background = "red";
+		document.getElementById("after_submitQ7").style.background = "lightgreen";
 		document.getElementById("answerQ7_picture").src = "EEG2_img/Q7.2.png";
                 document.getElementById("answerQ7_picture2").src = "EEG2_img/Q7.3.png";
 		document.getElementById("afterQ7_picture").innerHTML = "El voltaje es algo más alto en el hemisferio derecho (45 microvoltios versus 33 microvoltios). En esos casos el ritmo posterior dominante es anormal si su voltaje es más de 3 veces más alto en la derecha que en la izquierda. En el caso de que el voltaje más alto esté en el hemisferio izquierdo, entonces es anormal si el ritmo posterior dominante es más de 2 veces más alto en la izquierda que en la derecha. En todo caso esto tiene que evaluarse en todo el EEG, no solamente en una parte del EEG. <br><br> ¡Muy bien!";
 
 }
 
-	if (document.question6.question.value == "c") {
+	if (document.question7.question.value == "c") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "No. <br><br> Este EEG tiene un ritmo posterior dominante ligeramente asimétrico, pero esto es frecuentemente normal.";
 		document.getElementById("after_submitQ7").style.background = "red";
@@ -233,7 +233,7 @@ function checkQ7() {
 	if (document.question7.question.value == "d") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "¡Incorrecto! <br><br> Hay un ritmo posterior dominante en los hemisferios derecho e izquierdo.";
-		document.getElementById("after_submitQ7").style.background = "lightgreen";
+		document.getElementById("after_submitQ7").style.background = "red";
 		document.getElementById("answerQ7_picture").src = "EEG2_img/Q7.2.png";
                 document.getElementById("answerQ7_picture2").src = "EEG2_img/Q7.3.png";
 		document.getElementById("afterQ7_picture").innerHTML = "<br><br>¡Inténtalo de nuevo!";
@@ -255,7 +255,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "No.<br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "¿Dónde y cuándo se encuentra un ritmo posterior dominante en el EEG?<br><br> ¡Inténtalo de nuevo!";
 
 }
@@ -264,7 +263,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Incorrecto. <br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "¿Dónde y cuándo se encuentra un ritmo posterior dominante en el EEG?<br><br> ¡Inténtalo de nuevo!";
 
 }
@@ -273,7 +271,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Incorrecto. <br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "¿Dónde y cuándo se encuentra un ritmo posterior dominante en el EEG?<br><br> ¡Inténtalo de nuevo!";
 
 }
@@ -282,7 +279,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "¡Correcto! <br><br> Este EEG muestra ondas agudas del vertex y husos del sueño, pertenece a la fase II del sueño y no se puede encontrar un ritmo posterior dominante aquí.";
 		document.getElementById("after_submitQ8").style.background = "lightgreen";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "El ritmo posterior dominante aparece en un paciente en despierto con los ojos cerrados o que no está fijando la vista. No busques un ritmo posterior dominante durante el sueño, en  un paciente en coma, o en un paciente despierto pero on relajado. <br><br> ¡Muy bien!";
 
 }
@@ -302,7 +298,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "¡Correcto!<br><br>";
 		document.getElementById("after_submitQ9").style.background = "lightgreen";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "Exáctamente. El ritmo posterior dominante aparece durante la vigilia cuando el paciente está relajado, con los ojos cerrados o no fijándose en nada. Por lo tanto, incluso durante la vigilia el ritmo posterior dominante puede no aparecer si no se dan esas condiciones.<br><br> ¡Muy bien!";
 
 }
@@ -311,7 +306,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "Incorrecto. <br><br>";
 		document.getElementById("after_submitQ9").style.background = "red";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "A pesar de que el ritmo posterior dominante aparece en la mayoría de EEGs (en gran parte gracias a los técnicos que le piden al paciente que cierre los ojos y se relaje), puede que no aparezca y esto no hace el EEG anormal necesariamente.<br><br> ¡Inténtalo de nuevo!";
 
 }
@@ -320,7 +314,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "Incorrecto. <br><br>";
 		document.getElementById("after_submitQ9").style.background = "red";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "No. El ritmo posterior dominante no aparece durante el sueño.<br><br> ¡Inténtalo de nuevo!";
 
 }
@@ -329,7 +322,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "No. <br><br>";
 		document.getElementById("after_submitQ9").style.background = "red";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "El ritmo posterior dominante no aparece en ningún momento en particular después del comienzo de la vigilia. Al contrario que algunas fases del sueño (que aparecen cierto tiempo después de dormirse), el ritmo posterior dominante puede aparecer en cualquier momento durante la vigilia. <br><br> ¡Inténtalo de nuevo!";
 
 }
