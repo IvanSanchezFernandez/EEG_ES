@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG3 sueño</title>
+<link href = "EEG3_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG3_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG3: Características del sueño</h1>
+<p>El sueño y las transiciones de la vigilia al sueño y del sueño a la vigilia son partes cruciales de un EEG.
+ Cuando un EEG no contiene sueño, se considera un estudio incompleto. Tanto es así que algunos centros repiten
+ el EEG si no se capturó un periodo de sueño en el EEG inicial.<br><br>
+Las anomalías epileptiformes tienden a aparecer más frecuentemente durante el sueño o en las transiciones 
+ entre la vigilia y el sueño. Algunas anomalías que no se ven claramente durante la vigilia porque están 
+escondidas entre el artefacto muscular de la vigilia a veces se pueden ver más claramente durante el sueño.
+ Los espasmos infantiles tienden a ocurrir más frecuentemente cuando el lactante despierta del sueño.<br><br>
+ En resumen, un EEG sin sueño es casi como un coche (coche en España; carro o auto si lees esto en Latino América)
+ sin ruedas. Entonces, es importante familiarizarse con el sueño.</p>
+
+
+<br>
+<br>
+<h2><b>QUEDÁNDOSE DORMIDO/A</b></h2>
+<br>
+<p>
+La mayoría de las personas no se duermen abruptamente. Hay una transición progresiva de la vigilia al sueño
+ en la que la somnolencia evoluciona en un sueño cada vez más profundo.</p>
+
+<br>
+
+<figure>
+	<center><img id="transitionwakesleep" src="EEG3_img/transitionwakesleep.png" width=1200px heigth=1000px>
+	<figcaption><b>Transición de la vigilia al sueño.</b></figcaption></center>
+</figure>
+
+<br>
+
+
+<br>
+
+<figure>
+	<center><img id="transitionwakesleepmarkers" src="EEG3_img/transitionwakesleepmarkers.png" width=1200px heigth=1000px>
+	<figcaption><b>Transición de la vigilia al sueño (mismo segmento del EEG que en la figura de arriba).</b> La parte inicial de este segmento 
+ muestra un ritmo posterior dominante bien formado. Hacia el centro de la imagen el ritmo posterior dominante se hace menos aparente. 
+ Hacia el final de la imagen se ven algunas ondas agudas del vertex rudimentarias.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="phaseI" src="EEG3_img/phaseI.png" width=1200px heigth=1000px>
+	<figcaption><b>Somnolencia (fase I del sueño).</b> La siguiente página del EEG muestra que el paciente está completemente en fase I del sueño
+ como muestran las ondas agudas del vertex que son evidentes en la línea media y las regiones parasagitales.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="phaseI" src="EEG3_img/channels.png" width=1200px heigth=1000px>
+	<figcaption>Esta es una buena oportunidad para introducir algo de localización en los canales del EEG.
+ Los canales en un montaje bipolar anterior-posterior (uno de los montajes más frecuentes en el EEG) van de la parte anterior
+ a la posterior en 5 grupos: temporal izquierdo, parasagital izquierdo, línea media, parasagital derecho, y temporal derecho.
+ Cada uno de esos 5 grupos están representados por las áreas violetas en la imagen. Explicaremos los montajes en más detalle
+ en otra página, pero este es un buen momento para empezar a familiarizarse con qué parte del EEG corresponde a qué parte de
+ la cabeza.</figcaption></center>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<figure>
+	<center><img id="lateraleyemovements" src="EEG3_img/lateraleyemovements.png" width=1200px heigth=1000px>
+	<figcaption>Los movimientos laterales lentos de los ojos (mostrados dentro de los rectángulos rojos) son una de las características 
+ más típicas de la somnolencia. De todas formas, frecuentemente estos movimientos no aparecen. De todas formas las fases del ritmo sueñ0-vigilia
+ puede identificarse incluso sin todas las características de esa fase.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<figure>
+	<center><img id="drowsiness" src="EEG3_img/drowsiness.png" width=1200px heigth=1000px>
+	<figcaption>Por ejemplo, este segmento del EEG ocurre durante la somnolencia (fase I del sueño), ¿ves las ondas agudas del vertex?, pero no hay movimientos lentos laterales de los ojos.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question1" name="question1">
+<p><b>P1. En la transición entre vigilia y sueño, selecciona todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG3_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q1a" name="question" value="a"> El ritmo posterior dominante persiste durante la somnolencia y también durante la fase II del sueño<br>
+<input type="checkbox" id="q1b" name="question" value="b"> Durante la somnolencia (fase I del sueño) hay movimientos rápidos de los ojos<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Las ondas agudas del vertex son típicamente simétricas y más prominentes en la línea media y las regiones parasagitales<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Las ondas lentas de alta amplitud son la característica definitoria de la somnolencia (fase I del sueño)<br>
+<input type="checkbox" id="q1e" name="question" value="e"> La actividad epileptiforme tiende a resolverse durante la somnolencia (fase I) y reaparecer en la fase II del sueño<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. ¿Verdadero of falso? Una vez que el paciente entra en la fase I del sueño, el EEG evoluciona progresivamente hacia un sueño 
+ más y más profundo sin volver a fases previas del ciclo vigilia-sueño:</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> Verdadero<br>
+<input type="radio" id="q2" name="question" value="b"> Falso<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<h2><b>SUEÑO MÁS PROFUNDO</b></h2>
+<br>
+<p>Si el paciente permanece dormido, hay una transición progresiva a fases más profundas del sueño: fases II y III del sueño.</p>
+<br>
+
+
+<figure>
+	<center><img id="spindles1" src="EEG3_img/spindles1.png" width=1200px heigth=1000px>
+	<figcaption><b>Fase II del sueño.</b> El segmento del EEG de arriba muestra las características más típicas de la fase II del sueño: los husos del sueño.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+<figure>
+	<center><img id="spindles2" src="EEG3_img/spindles2.png" width=1200px heigth=1000px>
+	<figcaption><b>Husos del sueño.</b> Los husos del sueño se caracterizan por su morfología (fusiforme), su frecuencia (aproximadamente 14 Hz), y su localización
+ (regiones centrales).</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+
+<figure>
+	<center><img id="spindles3" src="EEG3_img/spindles3.png" width=1200px heigth=1000px>
+	<figcaption><b>Husos del sueño.</b> Los husos del sueño pueden tener una apariencia distinta en distintos pacientes, 
+ pero generalmente son simétricos, localizados en las regiones centrales, y de aproximadamente 14 Hz de frecuencia.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. Mientras lees un EEG te encuentras con el siguiente segmento. Tu conclusión es:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG3_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q3a" name="question" value="a"> No hay husos del sueño en este segmento del EEG<br>
+<input type="checkbox" id="q3b" name="question" value="b"> Hay husos del sueño en este segmento del EEG, pero solamente en la línea media y la región parasagital derecha<br>
+<input type="checkbox" id="q3c" name="question" value="c"> Es particularmente importante conocer la edad de este paciente<br>
+<input type="checkbox" id="q3d" name="question" value="d"> Los husos del sueño asimétricos son siempre anormales<br>
+<input type="checkbox" id="q3e" name="question" value="e"> Los elementos en este EEG son demasiado prolongados para ser husos del sueño<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ3_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+<br clear="all" />
+<br>
+<br>
+
+
+
+
+
+<br>
+<p>Cuando el paciente entra en fases más profundas del sueño, las ondas agudas del vertex desaparecen progresivamente, los husos del sueño se hacen menos prominentes, y
+ el EEG se ralentiza y aumenta en amplitud. La fase III del sueño se caracteriza por ondas lentas de alta amplitud
+ que ocupan al menos el 20% del trazado EEG.</p>
+<br>
+<br>
+
+
+<br>
+<br>
+
+<figure>
+	<center><img id="stageIII1" src="EEG3_img/stageIII1.png" width=1200px heigth=1000px>
+	<figcaption><b>Fase III del sueño.</b> La frecuencia predominante en la fase III del sueño es delta (3 Hz o menos) y la 
+ amplitud de las ondas es bastante alta (mira la escala de voltaje a 400 uV y compara la amplitud de esta porción del EEG con
+ el EEG de fases previas del sueño).</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>P4. Mientras lees un EEG encuentras el siguiente segmento. Concluyes que:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG3_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q4a" name="question" value="a"> Este segmento pertenece a la fase III del sueño<br>
+<input type="checkbox" id="q4b" name="question" value="b"> Hay husos del sueño en este segmento de EEG, por lo tanto no puede ser fase III, tiene que ser fase III<br>
+<input type="checkbox" id="q4c" name="question" value="c"> Debería haber movimientos lentos laterales de los ojos para clasificar un segmento como fase III<br>
+<input type="checkbox" id="q4d" name="question" value="d"> El ritmo posterior dominante reaparece en la fase III<br>
+<input type="checkbox" id="q4e" name="question" value="e"> La asimetría en los husos del sueño sugiere una anomalía estructural en este paciente<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ4_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+<h2><b>TRANSICIONES</b></h2>
+<br>
+<p>Es muy frecuente (y normal) tener breves despertares durante el sueño.</p>
+<br>
+
+<figure>
+	<center><img id="arousal1" src="EEG3_img/arousal1.png" width=1200px heigth=1000px>
+	<figcaption>En la parte inicial de este trazado EEG hay husos del sueño y hacia el final 
+ hay ondas hipersincronizadas de alta amplitud, y se empieza a ver algo de artefacto muscular.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+<figure>
+	<center><img id="arousal2" src="EEG3_img/arousal2.png" width=1200px heigth=1000px>
+	<figcaption>La siguiente página en el EEG muestra hipersincronía mejor formada y 
+ más artefacto muscular.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+<figure>
+	<center><img id="arousal3" src="EEG3_img/arousal3.png" width=1200px heigth=1000px>
+	<figcaption>La siguiente página del EEG muestra ondas agudas del vertex y husos del sueño hacia
+ el final de la página.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+<br>
+<p>Las transiciones entre la vigilia y el sueño (y viceversa) pueden aparecer inusuales y con ondas
+ hipersincronizadas de alto voltaje. Incluso si aparecen inusuales, son completamente normales durante las transiciones.</p>
+<br>
+
+
+<br>
+<figure>
+	<center><img id="transition1" src="EEG3_img/transition1.png" width=1200px heigth=1000px>
+	<figcaption>Hipersincronía hacia el final de este trazado EEG.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+
+
+
+<figure>
+	<center><img id="transition2" src="EEG3_img/transition2.png" width=1200px heigth=1000px>
+	<figcaption>La hipersincronía continúa en la siguiente página del EEG y se sigue de artefacto muscular y 
+ artifacto de movimiento.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+<h2><b>RESUMEN</b></h2>
+<p><b>En este momento, ya eres capaz de reconocer las características principales del EEG y sus fases.
+ Ya estás preparado para avanzar un paso más. Las cosas se pondrán mucho más interesantes pronto.<br>
+
+
+
+</body>
+
+</html>
