@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+<head>
+
+
+<title>EEG5 tipos de actividad epileptiforme</title>
+<link href = "EEG5_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG5_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG5: Tipos de actividad epileptiforme</h1>
+<p>En esta página aprenderás los distintos tipos de descargas epileptiformes.</p>
+
+
+<br>
+<br>
+
+
+
+
+<form id="question1" name="question1">
+<p><b>P1. Selecciona todos los enunciados correctos sobre la actividad epileptiforme:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG5_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q1a" name="question" value="a"> Cuanta más puntiaguada sea la actividad epileptiforme, más probabilidad de que el paciente tenga epilepsia<br>
+<input type="checkbox" id="q1b" name="question" value="b"> La apariencia de cualquier tipo de actividad epileptiforme significa más o menos lo mismo: una predisposición a tener crisis epilépticas<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Algunos tipos de actividad epileptiforme aparecen más comunmente en algunos tipos de síndromes epilépticos<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Las puntas (al contrario que las ondas agudas) son marcadores de una epilepsia más grave<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Cualquier tipo de descarga epileptiforme puede aparecer como focal or generalizada<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>PUNTAS</b></h2>
+<br>
+<p>Una punta es un tipo de descarga epileptiforme que tiene una duración de menos de 70 milisegundos.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="spikes1" src="EEG5_img/spikes1.png" width=1200px heigth=1000px>
+	<figcaption>Esta es una punta en T8/P4 (en la parte inferior de la imagen). Es un elemento del EEG
+ de contorno afilado que rompe el ritmo y que tiene un campo eléctrico que tiene sentido anatómicamente. Es
+ una punta porque es delgada (menos de 70 milisegundos).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>ONDAS AGUDAS</b></h2>
+<br>
+<p>Una onda aguda es similar a una punta, pero más ancha, con una duración de entre 70 y 200 milisegundos.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="sharpwaves1" src="EEG5_img/sharpwaves1.png" width=1200px heigth=1000px>
+	<figcaption>Esta descarga epileptiforme en P4/P8 es más ancha de 70 milisegundos pero más estrecha
+ que 200 milisegundos: es una onda aguda. Como referencia, la separación entre las líneas verdes verticales
+ es de 200 milisegundos.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpwaves2" src="EEG5_img/sharpwaves2.png" width=1200px heigth=1000px>
+	<figcaption>Hay múltiples ondas agudas en este segmento de EEG, con máximo en C3/P3, P7, y C4/P4.</figcaption></center>
+</figure>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. Mientras lees el EEG de la figura un compañero te pide medir con precisión la duración de cada
+ descarga epileptiforme para saber si es una punta (más corta de 70 milisegundos) o una onda aguda
+ (duración entre 70 y 200 milisegundos). Tu respuesta debería ser:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG5_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q2" name="question" value="a"> ¡Claro! Mediré la duración de cada descarga epileptiforme para ver cuál es una punta y cuál es una onda aguda<br>
+<input type="radio" id="q2" name="question" value="b"> Intentaré clasificar las descargas epileptiformes tan bien como pueda, pero no se necesita medir las descargas epileptiformes<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>COMPLEJOS DE PUNTA-ONDA</b></h2>
+<br>
+<p>El concepto de complejos punta-onda es bastante intuitivo: imagina una punta seguida de una onda lenta. Eso es un complejo punta-onda.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC1" src="EEG5_img/SWC1.png" width=1200px heigth=1000px>
+	<figcaption>Hay al menos tres descargas epileptiformes en este segmento del EEG que claramente rompen el ritmo, tienen un contorno
+ afilado, y afectan a la mayoría de los canales del EEG (campo eléctrico generalizado). ¿Ves la punta y después la onda lenta?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="SWC2" src="EEG5_img/SWC2.png" width=1200px heigth=1000px>
+	<figcaption>Misma imagen que arriba enfatizando una punta (flecha roja) y su onda lenta (círculo rojo).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC3" src="EEG5_img/SWC3.png" width=1200px heigth=1000px>
+	<figcaption>Hay un brote de complejos punta-onda en este segmento del EEG. ¿Puedes identificar la punta y la onda lenta?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC4" src="EEG5_img/SWC4.png" width=1200px heigth=1000px>
+	<figcaption>Misma imagen que arriba enfatizando una punta (flecha roja) y su onda lenta (círculo rojo).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC5" src="EEG5_img/SWC5.png" width=1200px heigth=1000px>
+	<figcaption>Otro ejemplo de complejos punta-onda que, en este caso, son más irregulares que en los ejemplos previos.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>POLIPUNTAS Y COMPLEJOS DE POLIPUNTA-ONDA</b></h2>
+<br>
+<p>Cuando una punta parece tener varias fases se denomina polipunta.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes1" src="EEG5_img/polyspikes1.png" width=1200px heigth=1000px>
+	<figcaption>Algunas de las puntas aparecen separadas de otras, pero muchas de ellas parecen como una descarga individual con varias fases
+ (una polipunta). Hay bastante subjetividad al decidir qué puntas son puntas individuales y cuáles son polipuntas.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes2" src="EEG5_img/polyspikes2.png" width=1200px heigth=1000px>
+	<figcaption>Esta descarga epileptiforme con máximo en F4 tiene múltiple fases y puede ser considerada una polipunta.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes3" src="EEG5_img/polyspikes3.png" width=1200px heigth=1000px>
+	<figcaption>Una descarga epileptiforme con varias puntas seguidas de una onda lenta se llama complejo polipunta-onda.
+ Un ejemplo se señala con la flecha roja.</figcaption></center>
+</figure>
+
+
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes4" src="EEG5_img/polyspikes4.png" width=1200px heigth=1000px>
+	<figcaption>Misma figura que arriba enfatizando el componente de polipunta (flechas rojas) y el componente de onda lenta (círculo rojo).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Está bien familiarizarse con los tipos principales de descargas epileptiformes: puntas, ondas agudas, complejos punta-onda,
+ polipuntas, y complejos polipunta-onda. Quizá te hayas dado cuenta de que las puntas y las ondas agudas son frecuentemente
+ focales o multifocales mientras que las polipuntas y los complejos polipunta-onda aparecen frecuentemente como descargas epileptiformes
+ generalizadas. Este es generalmente el caso, pero con muchas excepciones. El tipo de descargas epileptiformes y su distribución
+ ayudan a identificar el síndrome epiléptico. Las cosas se van a poner mucho más interesantes y divertidas pronto.<br>
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+
+</html>
