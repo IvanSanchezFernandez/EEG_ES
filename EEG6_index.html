@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+<head>
+
+
+<title>EEG6 ¿Es una punta?</title>
+<link href = "EEG6_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG6_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG6: Diferenciando actividad epileptiforme de elementos del EEG que se parecen a la actividad epileptiforme pero no lo son</h1>
+<p>Encontrar elementos del EEG que parecen actividad epileptiforme es relativamente fácil porque son afilados, destacan,
+ rompen el ritmo... Sería fácil simplemente llamar a cualquier elemento sospechoso en el EEG actividad epileptiforme. Por desgracia,
+ misclasificar actividad normal como actividad epileptiforme tiene consecuencias graves para el paciente. Ser capaz de reconocer
+ cuándo un elemento del EEG sospechoso no es actividad epileptiforme es tan importante como reconocer cuándo es actividad epileptiforme.<br><br>
+ Leyendo esta página aprenderás algunas ideas básicas para descartar que algunos elementos sospechosos del EEG sean actividad epileptiforme.</p>
+
+
+<br>
+<br>
+
+
+
+
+<figure>
+	<center><img id="EKG1" src="EEG6_img/EKG1.png" width=1200px heigth=1000px>
+	<figcaption>En esta figura puedes ver actividad sospechosa en la región temporal izquierda (mira a los canales F7-T7 y T7-P7).
+ Su contorno es afilado. Rompe el ritmo. Fíjate que aparece frecuentemente, regularmente, como un reloj. Más o menos una vez por segundo.
+ ¿Te recuerda a algo? ¿Qué sucede aproximadamente una vez por segundo?</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EKG2" src="EEG6_img/EKG2.png" width=1200px heigth=1000px>
+	<figcaption>Mismo segmento del EEG que en la figura previa. ¿Qué ocurre aproximadamente 60 veces por minuto?</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EKG3" src="EEG6_img/EKG3.png" width=1200px heigth=1000px>
+	<figcaption>Mismo segmento del EEG que en la figura previa. Estos elementos afilados del EEG ocurren al mismo tiempo que los complejos QRS
+ en el canal que registra el ECG y son, por lo tanto, artefacto del ECG, no actividad epileptiforme.</figcaption></center>
+</figure>
+
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EKG4" src="EEG6_img/EKG4.png" width=1200px heigth=1000px>
+	<figcaption>Otro ejemplo. Estos parecen más convincentes y más afilados.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EKG5" src="EEG6_img/EKG5.png" width=1200px heigth=1000px>
+	<figcaption>(Mismo segmento del EEG que en la figura anterior). Pero una mirada rápida al canal del ECG muestra que...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EKG6" src="EEG6_img/EKG6.png" width=1200px heigth=1000px>
+	<figcaption>(Mismo segmento del EEG que en la figura anterior). ...aparecen al mismo ritmo que el complejo QRS en el ECG-->artefacto del ECG.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EKG7" src="EEG6_img/EKG7.png" width=1200px heigth=1000px>
+	<figcaption>Una consideración más sutil es que si uno considera las dos líneas convergiendo para formar un pico afilado
+ la primera línea no es más inclinada que la segunda.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>El artefacto del ECG es simplemente la transmisión de la actividad eléctrica generada en el sistema de conducción del corazón y que es captada
+ por los electrodos en la cabeza. Recuerda que la actividad eléctrica generada en el sistema de conducción del corazón es mucho más alto en voltaje
+ que la actividad eléctrica generada en el cerebro, de tal manera que la actividad eléctrica del corazón puede ser vista en la cabeza incluso si
+ el generador está más alejado de los electrodos del EEG que el cerebro.<br>Artefactos similares pueden ser producidos por actividad eléctrica
+ cercana al paciente como máquinas en la UCI (ventiladores, bombas de infusión, etc.) o teléfonos móbiles (celulares en latinoamérica).
+ La clave es encontrar el ritmo e investigar si hay alguna fuente eléctrica de ese ritmo alrededor (o dentro) del paciente.</p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<figure>
+	<center><img id="POSTS1" src="EEG6_img/POSTS1.png" width=1200px heigth=1000px>
+	<figcaption>Hay unos elementos de contorno afilado en los segundos 2 y 4 de este segmento del EEG en los canales P7-O1 y P3-O1.
+ Llaman la atención, rompen el ritmo del resto del EEG. ¿Son descargas epileptiformes? Quizás. De todas formas, hay algunas cosas
+ que lo hacen menos probable: 1) su voltaje es relativamente alto, pero casi no tienen un campo eléctrico alrededor (fíjate en los canales
+ T7-P7, C3-P3, y en el lado derecho en los canales P4-O2 y P8-O2, ¿no esperarías más campo eléctrico alrededor?), y 2) no hay inversión de fase
+ (las descargas epileptiformes en un montaje bipolar apuntan una contra la otra en el punto de máxima negatividad en el cuero cabelludo).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="POSTS2" src="EEG6_img/POSTS2.png" width=1200px heigth=1000px>
+	<figcaption>Mismo segmento del EEG que en la figura anterior pero con un montaje diferente (montaje bipolar transverso).
+ Todavía no hay un campo eléctrico convincente en este montaje. Los elementos sospechosos son ondas agudas transitorias occipitales
+ en el sueño (POSTS), una variante normal.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Las ondas agudas transitorias occipitales en el sueño (POSTS) se ven frecuentemente en el sueño ligero. Tienen una morfología
+ triangular. Son completamente normales, son una variante normal. <b>No las misclasifiques como actividad epileptiforme.</b>
+ Una buena manera de reconocer los POSTS y no confundirlos con descargas epileptiformes es que típicamente aparecen sólo
+ durante el sueño ligero: cuando el paciente entra en fase II del sueño los POSTS tienden a desaparecer, lo que te debe hacer
+ sospechar porque la mayoría de actividad epileptiforme tiende a aparecer más frecuentemente y más prominentemente en la fase II del sueño.</p>
+
+
+
+<form id="question1" name="question1">
+<p><b>P1. Selecciona todas las afirmaciones correctas:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG6_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q1a" name="question" value="a"> Los POSTS pueden ser misclasificados como descargas epileptiformes occipitales<br>
+<input type="checkbox" id="q1b" name="question" value="b"> Los POSTS son una variante normal porque se originan en el cerebro<br>
+<input type="checkbox" id="q1c" name="question" value="c"> El artefacto del ECG se llama artefacto porque su origen no está en el cerebro<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Los POSTS pueden ser unilaterales o bilaterales<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Los POSTS tienden a aparecer en grupos de descargas semirrítmicas<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. Mientras lees un EEG te encuentras con el segmento de la figura. Selecciona todas las afirmaciones correctas:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG6_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q2a" name="question" value="a"> Los elementos de forma triangular en los canales posteriores del EEG son probablemente POSTS<br>
+<input type="checkbox" id="q2b" name="question" value="b"> Este segmento del EEG pertenece a la fase II del sueño, pero quizás algunos POSTS persistieron en fases más profundas del sueño en este paciente<br>
+<input type="checkbox" id="q2c" name="question" value="c"> Este segmento del EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q2d" name="question" value="d"> Los POSTS pueden ocurrir durante la vigilia<br>
+<input type="checkbox" id="q2e" name="question" value="e"> Los elementos de forma triangular en los canales posteriores no son POSTS<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. Mientras lees un EEG un colega te dice que hay una descarga epileptiforme en este segmento del EEG, en particular, en el tercer segundo en los canales Fp2-F4 y Fp2-F8. Tu respuesta debería ser:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG6_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q3a" name="question" value="a"> Sí, es una onda aguda<br>
+<input type="radio" id="q3b" name="question" value="b"> Sí, es una punta<br>
+<input type="radio" id="q3c" name="question" value="c"> Es algún tipo de actividad epileptiforme y localiza en la región frontal derecha<br>
+<input type="radio" id="q3d" name="question" value="d"> Creo que hay una pequeña onda lenta tras la descarga epileptiforme<br>
+<input type="radio" id="q3e" name="question" value="e"> Creo que no es una descarga epileptiforme<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ3_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ3_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<p>¿Qué te parecen los elementos afilados en la siguiente figura?</p>
+
+
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR1" src="EEG6_img/sharpPDR1.png" width=1200px heigth=1000px>
+	<figcaption>Algunos de los elementos con contornos afilados en los canales P4-O2 y P8-O2 llaman la atención, tienen un contorno afilado,
+ e incluso se puede argumentar que hay algo de campo eléctrico en los canales C4-P4 y T8-P8 e incluso en los canales posteriores en el hemisferio
+ izquierdo. Parece actividad epileptiforme, ¿verdad?</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR2" src="EEG6_img/sharpPDR2.png" width=1200px heigth=1000px>
+	<figcaption>(Mismo segmento del EEG que en la figura anterior). De todas maneras, hay algo peculiar en esos elementos: son muy rítmicos.
+ Ocurren muy regularmente. Ocurren aproximadamente 9 veces por segundo y este ritmo no cambia de segundo a segundo. Cubre una parte de la figura e
+ intenta predecir qué elementos vienen después. Esos elementos del EEG no rompen el ritmo. Son un poco predecibles.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+<p>Cuando las descargas en el EEG ocurren más de 5 veces por segundo es poco probable que sean descargas epileptiformes. Piensa que las descargas
+ epileptiformes son descargas eléctricas anormales que alteran el ritmo normal de descarga de las neuronas. Tras las descargas epileptiformes, lleva un
+ poco de tiempo al cerebro recuperarse y producir una nueva descarga epileptiforme o un ritmo normal del EEG. Piensa en esto como otra regla general:
+ si un elemento del EEG ocurre 6 o más veces por segundo con un ritmo más o menos regular, es poco probable que sean descargas epileptiformes. También,
+ si su frecuencia y apariencia es más o menos la misma cada vez que aparecen, es poco probable que sean descargas epileptiformes.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR3" src="EEG6_img/sharpPDR3.png" width=1200px heigth=1000px>
+	<figcaption>(Mismo segmento del EEG que en la figura de arriba). Los elementos con un contorno afilado aparecen como un ritmo posterior dominante,
+ simplemente con un contorno más afilado de lo habitual. De hecho, esta variante normal se llama "ritmo posterior dominante afilado".
+ Es completamente normal. <b>No lo misclasifiques como actividad epileptiforme</b>.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR4" src="EEG6_img/sharpPDR4.png" width=1200px heigth=1000px>
+	<figcaption>Otro ejemplo de un ritmo posterior dominante afilado. En este ejemplo, es incluso más claro que el ritmo a veces aparece más afilado y
+ a veces más típico del ritmo posterior dominante sin un límite claro entre ambos. <b>No lo misclasifiques como actividad epileptiforme</b>.</figcaption></center>
+</figure>
+
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR5" src="EEG6_img/sharpPDR5.png" width=1200px heigth=1000px>
+	<figcaption>El ritmo posterior dominante a veces aparece más afilado de lo habitual. Algunas veces incluso parece tener una inversión de fase negativa
+ (elementos de contorno afilado que apuntan uno contra otro) como se señala con la flecha roja. La clave para identificar esos elementos como normales
+ es que no son muy distintos que los otros elementos normales alrededor.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR6" src="EEG6_img/sharpPDR6.png" width=1200px heigth=1000px>
+	<figcaption>Si consideramos este elemento aisladamente, aparece de contorno bastante afilado, incluso tiene un campo eléctrico
+ que tiene sentido anatómicamente. Evaluando este elemento por sí solo te llevaría seguramente a llamarlo una descarga epileptiforme...</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR7" src="EEG6_img/sharpPDR7.png" width=1200px heigth=1000px>
+	<figcaption>...pero si se considera ese elemento en su contexto te das cuenta de que se parece bastante a otros elementos del EEG que son simplemente
+ parte del ritmo posterior dominante. Por lo tanto, puedes concluir que el elemento que parecía sospechoso era simplemente parte del ritmo posterior dominante.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpPDR8" src="EEG6_img/sharpPDR8.png" width=1200px heigth=1000px>
+	<figcaption>Mismo segmento del EEG que en la figura anterior en un montaje distinto (montaje referencial con la referencia en el electrodo Cz). En este
+ montaje incluso se hace más evidente que no hay rotura del ritmo, simplemente son partes del ritmo posterior dominante más o menos prominentes.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="spikes1" src="EEG6_img/spikes1.png" width=1200px heigth=1000px>
+	<figcaption>Compara el ritmo regular y predecible de las variantes normales del EEG en las imágenes anteriores con las puntas en C3 y C4 en este
+ segmento del EEG. Las puntas en este segmento del EEG son diferentes de los ritmos del EEG y no se parecen a nada en el resto del segmento de EEG.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<form id="question4" name="question4">
+<p><b>P4. Analiza los rasgos de los elementos de contornos afilados en el cuarto segundo de este segmento del EEG (montaje superior:
+ montaje bipolar antero-posterior; montaje inferior: montaje referencial con Cz como referencia) y selecciona todas las afirmaciones correctas:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG6_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q4_2" src="EEG6_img/Q4.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> Los elementos con contornos afilados tienen una frecuencia aproximada de 3 Hz<br>
+<input type="checkbox" id="q4b" name="question" value="b"> Los elementos con contornos afilados tienen un campo eléctrico que tiene sentido anatómicamente<br>
+<input type="checkbox" id="q4c" name="question" value="c"> La morfología de los elementos de contorno afilado es bastante regular y típica para una descarga epileptiforme<br>
+<input type="checkbox" id="q4d" name="question" value="d"> Los elementos con contornos afilados sólo afectan dos electrodos<br>
+<input type="checkbox" id="q4e" name="question" value="e"> Los elementos con contornos afilados son descargas epileptiformes<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ4_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+<figure>
+	<center><img id="badelectrode1" src="EEG6_img/badelectrode1.png" width=1200px heigth=1000px>
+	<figcaption>El electrodo T8 no está bien fijado al cuero cabelludo y, por lo tanto, se separa del cuero cabelludo
+ frecuentemente. Los canales F8-T8 tienen elementos con contornos afilados que son imágenes en reflejo de los elementos en el
+ canal T8-P8, pero aparte de esos dos canales que contienen el (mal) electrodo T8, ninguna de esa actividad se ve en ningún
+ otro sitio del EEG. Esta actividad es artefacto del electrodo.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>Hay muchas variantes normales y muchos artefactos en el EEG y no debes misclasificarlas como descargas epileptiformes.
+ Cuando sospeches que algunos elementos en el EEG pueden ser descargas epileptiformes, pregúntate:<br><br>"¿Ocurren de forma rítmica y es su frecuencia
+ de 6 Hz o superior?" La actividad rítmica con una frecuencia de 6 Hz o superior es poco probable que sea actividad epileptiforme. Piensa en lo que
+ puede estar causando esas descargas rítmicas, mira el video del EEG (¿hay respiradores o bombas de infusión alrededor del paciente?)<br><br>"¿Tienen un
+ campo eléctrico que tiene sentido anatómicamente?" Si el elemento en cuestión sólo afecta uno o dos canales o si afecta
+ canales que no están cerca anatómicamente, entonces es poco probable que sea actividad epileptiforme.<br><br>"¿Este elemento del EEG ocurre
+ sólo en una de las fases del ciclo sueño-vigilia?" Generalmente, la actividad epileptiforme tiende a ser más prominente y frecuente en las fases I y II del sueño.
+ Los elementos sólo ocurren en una fase específica del ciclo sueño-vigilia y después desaparecen del resto del EEG es poco probable que sean
+ descargas epileptiformes.<br><br>"¿Los elementos del EEG con contornos afilados se parecen a otros elementos normales del EEG?" Si los elementos en cuestión
+ se parecen a elementos normales del EEG, posiblemente sean tambien elementos normales del EEG.<br><br>Estás aprendiendo cada vez más. ¡Continúa el gran trabajo!</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+
+</html>
