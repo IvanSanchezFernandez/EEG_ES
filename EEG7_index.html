@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG7 técnicas de activatión</title>
+<link href = "EEG7_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG7_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG7: Técnicas de activación</h1>
+<p>Hay varias situaciones que aumentan la probabilidad de detectar descargas epileptiformes en el EEG. Estas técnicas de activación
+ se deben hacer en cada EEG (a menos que estén contraindicadas en el paciente) para aumentar el valor diagnóstico del EEG.
+ Las tres técnicas de activación principales son deprivación de sueño, hiperventilación, y estimulación luminosa intermitente.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>DEPRIVACIÓN DE SUEÑO</b></h2>
+<br>
+
+<p>La deprivación de sueño aumenta la probabilidad de capturar actividad epileptiforme mediante dos mecanismos: 1) aumenta la probabilidad de que
+ el paciente se duerma durante el EEG (y el sueño y las transiciones vigilia-sueño y sueño-vigilia son los periodos donde la actividad epileptiforme
+ tiende a aparecer) y 2) un paciente con deprivación de sueño es más proclive a mostrar descargas epileptiformes en el EEG, incluso si el paciente
+ no se duerme durante el EEG.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="car" src="EEG7_img/car.png" width=1200px heigth=1000px>
+	<figcaption><b>Imagen de un EEG sin sueño.</b></figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<p>Deprivar al paciente de sueño la noche anterior al EEG y obtener sueño durante el EEG son los procedimientos más
+ efectivos para obtener descargas epileptiformes. Afortunadamente, son también los más fáciles: solamente requieren que el
+ paciente reduzca drásticamente la cantidad de sueño la noche anterior al EEG.</p>
+
+<br>
+<br>
+
+<form id="question1" name="question1">
+<p><b>P1. Un paciente tiene un EEG programado para mañana y tú le recomiendas que duerma la mitad de sus horas habituales de sueño esa noche
+ anterior al EEG. El paciente está preocupado por no dormir porque tiene que conducir aproximadamente 1 hora para llegar al hospital.
+ ¿Cuál es tu mejor recomendación?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Pida a algún familiar o amigo que le lleve al hospital la mañana del EEG<br>
+<input type="radio" id="q1" name="question" value="b"> No te preocupes. Conducir sin haber dormido es totalmente seguro. Mucha gente lo hace cada día<br>
+<input type="radio" id="q1" name="question" value="c"> Puedes venir al hospital en transporte público la mañana del EEG sin necesidad de molestar a familiares o amigos<br>
+<input type="radio" id="q1" name="question" value="d"> Es mejor si no hacemos deprivación de sueño antes del EEG<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h2><b>HIPERVENTILACIÓN</b></h2>
+<br>
+
+<p>La hiperventilación consiste en hacer al paciente respirar profundamente y rápidamente durante aproximadamente 3 minutos. En niños
+ soplar un molinillo puede facilitar la tarea. La hiperventilación causa una disminución del CO2 arterial con vasoconstricción
+ secundaria. Esto causa enlentecimiento del EEG difuso y simétrico con ondas de alto voltaje. La hiperventilación aumenta la
+ probabilidad de que aparezcan descargas epileptiformes en el EEG.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="HV1" src="EEG7_img/HV1.png" width=1200px heigth=1000px>
+	<figcaption>Este paciente empieza a hiperventilar en este momento del EEG. En la parte inicial de la figura
+ se puede ver un ritmo posterior dominante bien formado y con una frecuencia de 10-11 Hz.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="HV2" src="EEG7_img/HV2.png" width=1200px heigth=1000px>
+	<figcaption>El paciente continúa hiperventilando y el ritmo posterior dominante tiende a ralentizarse.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="HV3" src="EEG7_img/HV3.png" width=1200px heigth=1000px>
+	<figcaption>El paciente continúa hiperventilando y el enlentecimiento del ritmo posterior dominante se hace más prominente.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="HV4" src="EEG7_img/HV4.png" width=1200px heigth=1000px>
+	<figcaption>El paciente contiúa hiperventilando y todo el EEG se hace lento y de alta amplitud.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. En relación con el segmento de EEG de la figura (obtenido durante hiperventilación) señala todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG7_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> Esto es normal<br>
+<input type="checkbox" id="q2b" name="question" value="b"> Hay actividad epileptiforme en este segmento del EEG<br>
+<input type="checkbox" id="q2c" name="question" value="c"> El voltaje de este segmento del EEG es demasiado alto y, por lo tanto, el EEG es anormal<br>
+<input type="checkbox" id="q2d" name="question" value="d"> Hay demasiado enlentecimiento y, por lo tanto, el EEG es anormal<br>
+<input type="checkbox" id="q2e" name="question" value="e"> Debes detener la hiperventilación en este paciente inmediatamente<br>
+<input type="checkbox" id="q2f" name="question" value="f"> Anima al paciente a continuar respirando de la misma manera hasta un total de aproximadamente 3 minutos<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. Un paciente se presenta a tu hospital para un EEG de rutina y tomas una historia clínica breve. Este paciente tiene diabetes mellitus, hipertensión,
+ es fumador, y tuvo un infarto cerebral hace un año. ¿Deberías hiperventilar a este paciente?</b></p>
+<br>
+<input type="radio" id="q3" name="question" value="a"> ¡Sí! La hiperventilación es muy segura<br>
+<input type="radio" id="q3" name="question" value="b"> ¡No! Los pacientes con diabetes mellitus pueden desarrollar hipoglucemia por la hiperventilación<br>
+<input type="radio" id="q3" name="question" value="c"> ¡No! La hiperventilación está contraindicada en los pacientes con hipertensión<br>
+<input type="radio" id="q3" name="question" value="d"> ¡No! La hiperventilación está contraindicada en pacientes con historia de infarto cerebral<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>P4. En un centro de referencia para la epilepsia ves a 4 pacientes haciéndose un EEG al mismo tiempo en 4 habitaciones distintas.
+ Si sólo puedes hacer hiperventilación en uno de ellos, ¿cuál priorizarías?</b></p>
+<br>
+<input type="radio" id="q4a" name="question" value="a"> La chica de 17 años con epilepsia mioclónica juvenil<br>
+<input type="radio" id="q4b" name="question" value="b"> El chico de 20 años con epilepsia frontal nocturna autosómica dominante<br>
+<input type="radio" id="q4c" name="question" value="c"> El niño de 6 años con epilepsia de ausencias de la infancia<br>
+<input type="radio" id="q4d" name="question" value="d"> El hombre de 79 años con epilepsia secundaria a un infarto cerebral previo<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+
+<h2><b>ESTIMULACIÓN LUMINOSA INTERMITENTE</b></h2>
+<br>
+
+<p>La estimulación luminosa intermitente consiste en mostrar luces a una determinada frecuencia al paciente. Esto puede molestar a los pacientes, que tienden a cerrar los ojos.
+ Lo bueno de esta técnica es que, mientras el paciente tenga su cabeza más o menos en la dirección de la luz, la estimulación luminosa intermitente funciona igualmente.
+ La luz causa su efecto incluso a través de los párpados cerrados.<br><br>Cada pulso de estimulación luminosa intermitente dura típicamente 6-12 segundos en el que
+ las luces se muestran a una frecuencia constante. La frecuencia varía de pulso a pulso con frecuencias que van de aproximadamente 3 Hz a aproximadamente 25 Hz.
+ Un paradigma típico de estimulación luminosa intermitente sería dar un pulso de 3 Hz durante 10 segundos seguido (tras varios segundos sin estimulación luminosa
+ intermitente) por otro pulso de 10 segundos a 5 Hz seguido (tras varios segundos sin estimulación luminosa intermitente) por otro pulso de 10 segundos a 8 Hz
+ seguido (tras varios segundos sin estimulación luminosa intermitente) por otro pulso de 10 segundos a 12 Hz seguido (tras varios segundos sin estimulación
+ luminosa intermitente) por otro pulso de 10 segundos a 16 Hz seguido (tras varios segundos sin estimulación luminosa intermitente) por otro pulso de
+ 10 segundos a 18 Hz seguido (tras varios segundos sin estimulación luminosa intermitente) por otro pulso de 10 segundos a 21 Hz seguido
+ (tras varios segundos sin estimulación luminosa intermitente) por otro pulso de 10 segundos a 25 Hz.</p>
+
+<br>
+<br>
+
+<form id="question5" name="question5">
+<p><b>P5. Mientras lees un EEG encuentras el siguiente fenómeno durante la estimulación luminosa intermitente. ¿Qué deberías hacer?</b></p>
+<figure>
+	<img id="Q5_1" src="EEG7_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<figure>
+	<img id="Q5_2" src="EEG7_img/Q5.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q5a" name="question" value="a"> Llamar al equipo de respuesta rápida del hospital<br>
+<input type="radio" id="q5b" name="question" value="b"> Detener la estimulación luminosa intermitente inmediatamente<br>
+<input type="radio" id="q5c" name="question" value="c"> Continuar la estimulación luminosa intermitente y el EEG sin cambios<br>
+<input type="radio" id="q5d" name="question" value="d"> Inyectar una medicación anticonvulsiva intravenosamente tan pronto como puedas<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="question6" name="question6">
+<p><b>P6. En el segmento de EEG de abajo, capturado durante estimulación luminosa intermitente, señala todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG7_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> Si la actividad epileptiforme ocurre sólo durante la estimulación luminosa intermitente el EEG sigue siendo normal<br>
+<input type="checkbox" id="q6b" name="question" value="b"> Activa al equipo de respuesta rápida durante del hospital<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Continúa con la estimulación luminosa intermitente y con el EEG normalmente<br>
+<input type="checkbox" id="q6d" name="question" value="d"> Hay actividad epileptiforme en este segmento del EEG<br>
+<input type="checkbox" id="q6e" name="question" value="e"> Deberías inyectar una medicación anticonvulsiva tan pronto como sea posible<br>
+<input type="checkbox" id="q6f" name="question" value="f"> No hay actividad epileptiforme en este segmento del EEG<br>
+<input id="buttonQ6" type="button" value="¡Ya está!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<figure>
+<img id="answerQ6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<figure>
+	<center><img id="PS1" src="EEG7_img/PS1.png" width=1200px heigth=1000px>
+	<figcaption>Algunas veces la respuesta fotoparoxística es más sutil. ¿Puedes ver las descargas epileptiformes en esta imagen?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="PS2" src="EEG7_img/PS2.png" width=1200px heigth=1000px>
+	<figcaption>Misma figura que arriba mostrando las descargas epileptiformes con flechas rojas.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<form id="question7" name="question7">
+<p><b>P7. En un centro de referencia para la epilepsia ves a 4 pacientes haciéndose un EEG al mismo tiempo en 4 habitaciones distintas.
+ Si sólo puedes hacer hiperventilación en uno de ellos, ¿cuál priorizarías?</b></p>
+<br>
+<input type="radio" id="q7a" name="question" value="a"> La chica de 17 años con epilepsia mioclónica juvenil<br>
+<input type="radio" id="q7b" name="question" value="b"> El chico de 20 años con epilepsia frontal nocturna autosómica dominante<br>
+<input type="radio" id="q7c" name="question" value="c"> El niño de 6 años con epilepsia de ausencias de la infancia<br>
+<input type="radio" id="q7d" name="question" value="d"> El hombre de 79 años con epilepsia secundaria a un infarto cerebral previo<br>
+<input id="buttonQ7" type="button" value="¡Ya está!" onclick="checkQ7();">
+</form>
+
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
+<h2><b>OTRAS TÉCNICAS DE ACTIVACIÓN</b></h2>
+<br>
+
+<p>Hay otras técnicas de activación que son muy específicas del paciente. Por ejemplo, algunos individuos tienen actividad epileptiforme o incluso crisis epilépticas
+ desencadenadas por <a href='https://pubmed.ncbi.nlm.nih.gov/25726285/' target='_blank'>música (o por ritmos repetitivos)</a>. Otros pacientes
+ tienen actividad epileptiforme o incluso crisis epilépticas desencadenadas por <a href='https://academic.oup.com/brain/article-pdf/118/1/75/978756/118-1-75.pdf' target='_blank'>leer (u otra actividad relacionada con el lenguaje)</a>.
+ Hay muchos otros desencadenantes potenciales para la actividad epileptiforme o las crisis epilépticas incluyendo <a href='https://pubmed.ncbi.nlm.nih.gov/33417183/' target='_blank'>agua caliente</a>,
+ <a href='https://academic.oup.com/brain/article-pdf/106/3/537/758592/106-3-537.pdf' target='_blank'>dolor</a>, u otros muchos desencadenantes potenciales.<br><br>Esos desencadenantes son tan específicos del paciente que no merece la pena probarlos a menos que
+ la historia sugiera que puedan funcionar en ese paciente.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Deberías hacer deprivación del sueño (antes del EEG) e intentar obtener sueño (durante el EEG). También deberías
+ hacer hiperventilación y estimulación luminosa intermitente en cada EEG (a menos que el paciente tenga contraindicaciones
+ específicas para estas técnicas).<br><br>Recuerda preguntar a tus pacientes qué desencadenantes suelen causar sus crisis epilépticas.</b></p>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
