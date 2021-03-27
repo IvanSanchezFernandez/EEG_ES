@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG9 otro examen</title>
+<link href = "EEG9_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG9_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG9: Otro examen</h1>
+
+<p>¡Hagamos otro examen! Es una forma fácil y divertida de solidificar conceptos importantes y aprender cosas nuevas.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>P1. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG9_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q1a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q1b" name="question" value="b"> Este segmento del EEG corresponde a hiperventilación<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Este segmento del EEG corresponde a la fase I del sueño<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Este segmento del EEG corresponde a la vigilia<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Este segmento del EEG corresponde a la estimulación lumínica intermitente<br>
+<input type="checkbox" id="q1f" name="question" value="f"> Este segmento del EEG es anormal y sugiere una predisposición a tener crisis epilépticas<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG9_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q2b" name="question" value="b"> Este segmento del EEG corresponde a la fase I del sueño<br>
+<input type="checkbox" id="q2c" name="question" value="c"> Este segmento del EEG corresponde a la fase III del sueño<br>
+<input type="checkbox" id="q2d" name="question" value="d"> Este segmento del EEG corresponde a la vigilia<br>
+<input type="checkbox" id="q2e" name="question" value="e"> Este segmento del EEG ocurre durante hiperventilación<br>
+<input type="checkbox" id="q2f" name="question" value="f"> Este segmento del EEG contiene actividad epileptiforme<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG9_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q3b" name="question" value="b"> Este segmento de EEG corresponde a la vigilia<br>
+<input type="checkbox" id="q3c" name="question" value="c"> Este segmento de EEG corresponde a la fase II del sueño<br>
+<input type="checkbox" id="q3d" name="question" value="d"> Este segmento de EEG contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q3e" name="question" value="e"> Este segmento de EEG contiene husos del sueño<br>
+<input type="checkbox" id="q3f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ3_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question4" name="question4">
+<p><b>P4. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG9_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q4b" name="question" value="b"> Este segmento de EEG corresponde a la fase II del sueño<br>
+<input type="checkbox" id="q4c" name="question" value="c"> Este segmento de EEG corresponde a hiperventilación durante la vigilia<br>
+<input type="checkbox" id="q4d" name="question" value="d"> Este segmento de EEG contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q4e" name="question" value="e"> Este segmento de EEG contiene husos del sueño<br>
+<input type="checkbox" id="q4f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question5" name="question5">
+<p><b>P5. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q5_1" src="EEG9_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Si ves esto en el EEG, llama rápidamente al equipo de respuesta rápida del hospital<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Este segmento de EEG corresponde a la fase III del sueño<br>
+<input type="checkbox" id="q5d" name="question" value="d"> Este segmento de EEG contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q5e" name="question" value="e"> Este segmento de EEG ocurre durante estimulación luminosa intermitente<br>
+<input type="checkbox" id="q5f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question6" name="question6">
+<p><b>P6. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG9_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q6b" name="question" value="b"> Este segmento de EEG corresponde a la fase I del sueño<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Este segmento de EEG contiene ondas agudas posteriores occipitales del sueño (POSTS)<br>
+<input type="checkbox" id="q6d" name="question" value="d"> Este segmento de EEG contiene ondas del vertex<br>
+<input type="checkbox" id="q6e" name="question" value="e"> Este segmento de EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q6f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ6" type="button" value="¡Ya está!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<figure>
+<img id="answerQ6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question7" name="question7">
+<p><b>P7. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG9_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q7a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q7b" name="question" value="b"> Este segmento de EEG corresponde a la fase I del sueño<br>
+<input type="checkbox" id="q7c" name="question" value="c"> Este segmento de EEG corresponde a la vigilia<br>
+<input type="checkbox" id="q7d" name="question" value="d"> Este segmento de EEG contiene ondas del vertex<br>
+<input type="checkbox" id="q7e" name="question" value="e"> Este segmento de EEG contiene un ritmo posterior dominante<br>
+<input type="checkbox" id="q7f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ7" type="button" value="¡Ya está!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question8" name="question8">
+<p><b>P8. Mientras lees un EEG te encuentras con las líneas ondulantes de abajo. Indica todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q8_1" src="EEG9_img/Q8.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q8a" name="question" value="a"> Este es un segmento de EEG normal. Las líneas ondulantes son normales<br>
+<input type="checkbox" id="q8b" name="question" value="b"> Este es un segmento de EEG anormal. Las líneas ondulantes son anormales<br>
+<input type="checkbox" id="q8c" name="question" value="c"> Este segmento de EEG corresponde a la fase III del sueño y esos elementos son ondas lentas de alto voltaje que son típicas de esa fase<br>
+<input type="checkbox" id="q8d" name="question" value="d"> Las líneas ondulantes son ondas lentas tras una punta<br>
+<input type="checkbox" id="q8e" name="question" value="e"> Las líneas ondulantes son un ritmo posterior dominante muy lento<br>
+<input type="checkbox" id="q8f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ8" type="button" value="¡Ya está!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<figure>
+<img id="answerQ8_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ8_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ8_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question9" name="question9">
+<p><b>P9. Indica todas las respuestas correctas sobre el segmento de EEG abajo:</b></p>
+<figure>
+	<img id="Q9_1" src="EEG9_img/Q9.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q9a" name="question" value="a"> Este segmento de EEG es normal<br>
+<input type="checkbox" id="q9b" name="question" value="b"> Este segmento de EEG corresponde a la fase I del sueño<br>
+<input type="checkbox" id="q9c" name="question" value="c"> Este segmento de EEG corresponde a la vigilia<br>
+<input type="checkbox" id="q9d" name="question" value="d"> Este segmento de EEG contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q9e" name="question" value="e"> Este segmento de EEG contiene complejos de punta-onda frontales<br>
+<input type="checkbox" id="q9f" name="question" value="f"> Este segmento de EEG contiene actividad epileptiforme<br>
+<input id="buttonQ9" type="button" value="¡Ya está!" onclick="checkQ9();">
+</form>
+
+<div id="after_submitQ9">
+<p id="answerQ9"></p>
+<br>
+<figure>
+<img id="answerQ9_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ9_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ9_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ9_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<form id="question10" name="question10">
+<p><b>P10. Arrastra y suelta para emparejar las características que pertenecen a descargas epileptiformes y a elementos que parecen descargas epileptiformes, pero no lo son:</b>
+<br>
+<br>
+
+<div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b>Descargas epileptiformes</b></p>
+<br>
+<br>
+<div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b>No son descargas epileptiformes</b></p>
+<br>
+<br>
+<div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b>No discriminatorio</b></p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<span id="drag1" data-div="drop1" draggable="true" ondragstart="drag(event)"><b>Campo eléctrico en electrodos cercanos&emsp;</b></span></div>
+<span id="drag2" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Solamente aparece en una fase del ciclo sueño-vigilia&emsp;</b></span></div>
+<br><br>
+<span id="drag3" data-div="drop1" draggable="true" ondragstart="drag(event)"><b>Típicamente más prominente en las fases I y II del sueño&emsp;</b></span></div>
+<br><br>
+<span id="drag4" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Campo eléctrico que se salta electrodos cercanos y aparece en electrodos lejanos&emsp;</b></span></div>
+<span id="drag5" data-div="drop3" draggable="true" ondragstart="drag(event)"><b>Contornos afilados&emsp;</b></span></div>
+<br><br>
+<span id="drag6" data-div="drop3" draggable="true" ondragstart="drag(event)"><b>Rompe el ritmo&emsp;</b></span></div>
+<span id="drag7" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Sigue el ritmo de una máquina de la UCI&emsp;</b></span></div>
+<span id="drag8" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>No tiene contornos agudos&emsp;</b></span></div>
+<br><br>
+<span id="drag9" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Se mezcla suavemente con los ritmos normales del EEG&emsp;</b></span></div>
+<span id="drag10" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Sigue el ritmo del corazón&emsp;</b></span></div>
+<br>
+<br>
+<input id="buttonQ10" type="button" value="¡Muestráme todas las respuestas, por favor!" onclick="checkQ10();">
+</form>
+
+<div id="after_submitQ10">
+<p id="answerQ10"></p>
+
+</div>
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Tras revisar esta página, has solidificado las diferentes fases del ritmo sueño-vigilia y las diferencias entre descargas epileptiformes
+ y elementos que parecen descargas epileptiformes pero no lo son.
+<br>
+También has aprendido un nuevo tipo de artefacto en el EEG: artefacto de sudoración. Ahora reconocerás ese artefacto inmediatamente la próxima vez que lo veas.
+ El artefacto de sudoración aparece como una variación muy lenta en los canales del EEG.<br><br>
+Actualmente, eres capaz de diferenciar bastante bien los segmentos de EEG con y sin actividad epileptiforme. ¡Sigue aprendiendo! Hay muchas cosas interesantes para aprender del EEG en las páginas siguientes.</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
+ 
