@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG10 Enlentecimiento</title>
+<link href = "EEG10_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG10_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG10: Enlentecimiento</h1>
+<p>El enlentecimiento ocurre cuando los ritmos del EEG son más lentos de lo esperado.<br><br>¿Qué es más lento de lo esperado?
+ ¿Cuándo hay demasiado enlentecimiento? ¡Es complicado!<br><br>En esta página aprenderemos cuándo el enlentecimiento es anormal
+ y cómo clasificarlo.</p>
+
+
+<br>
+<br>
+
+
+<h2><b>ENLENTECIMIENTO FOCAL</b></h2>
+<br>
+<figure>
+	<center><img id="focalslowing1" src="EEG10_img/focalslowing1.png" width=1200px heigth=1000px>
+	<figcaption><b>¿Notas algo inusual en este EEG?</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowing2" src="EEG10_img/focalslowing2.png" width=1200px heigth=1000px>
+	<figcaption>Intenta comparar el hemisferio izquierdo (corchete rojo superior) con el hemisferio derecho (corchete rojo inferior).
+ La mayoría de los ritmos en el hemisferio derecho parecen más lentos que los ritmos correspondientes en el hemisferio izquierdo. Este EEG
+ no es simétrico.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowing3" src="EEG10_img/focalslowing3.png" width=1200px heigth=1000px>
+	<figcaption>La sensación intuitiva de asimetría puede ser más evidente si comparas los ritmos en un canal de un lado
+ con el canal equivalente en el otro lado. Por ejemplo, si comparamos el canal F3-C3 con el canal F4-C4 (que deberían ser
+ más o menos simétricos), vemos que los ritmos en el canal F4-C4 son mucho más lentos que en el canal F3-C3.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p><b>El enlentecimiento que ocurre localmente en algunas regiones del cerebro se llama enlentecimiento focal.</b>El enlentecimiento focal
+ es relativamente fácil de identificar porque el EEG normal debería ser simétrico alrededor de la línea media. Por lo tanto, asimetrías
+ llaman la atención del lector del EEG y ayudan a identificar el enlentecimiento focal.</p>
+
+
+<br>
+<br>
+
+
+
+
+
+<form id="question1" name="question1">
+<p><b>P1. Señala todas las respuestas correctas sobre el EEG de abajo:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG10_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q1a" name="question" value="a"> Este segmento de EEG es simétrico<br>
+<input type="checkbox" id="q1b" name="question" value="b"> Este segmento de EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Hay un enlentecimiento focal en la región temporal derecha<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Hay un enlentecimiento focal en la región temporal izquierda<br>
+<input type="checkbox" id="q1f" name="question" value="f"> Hay un enlentecimiento focal en las regiones temporales derecha e izquierda<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. ¿Cuál es la interpretación de un enlentecimiento focal en un EEG?</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> Un foco epileptogénico<br>
+<input type="radio" id="q2" name="question" value="b"> Una anomalía focal estructural o funcional en el cerebro<br>
+<input type="radio" id="q2" name="question" value="c"> Una variante normal<br>
+<input type="radio" id="q2" name="question" value="d"> Un marcador de una anomalía estructural<br>
+<input type="radio" id="q2" name="question" value="d"> Un estado postictal tras una crisis epiléptica focal<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. Señala todas las respuestas correctas sobre el segmento del EEG de abajo:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG10_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> Hay descargas epileptiformes en el hemisferio izquierdo<br>
+<input type="checkbox" id="q3b" name="question" value="b"> Este segmento de EEG es simétrico<br>
+<input type="checkbox" id="q3c" name="question" value="c"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q3d" name="question" value="d"> Hay un enlentecimiento en el hemisferio izquierdo comparado con el hemisferio derecho<br>
+<input type="checkbox" id="q3e" name="question" value="e"> Hay descargas epileptiformes en el hemisferio derecho<br>
+<input type="checkbox" id="q3f" name="question" value="f"> En areas de enlentecimiento no puede haber descargas epileptiformes<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<p><b>Concepto importante: El enlentecimiento focal marca un area del cerebro que es estructuralmente o funcionalmente anormal.</b>Las areas de enlentecimiento
+ focal frecuentemente tienen actividad epileptiforme entremezclada con el enlentecimiento. También es frecuente ver areas de enlentecimiento focal
+ sin actividad epileptiforme y, más tarde o más temprano en el EEG, la actividad epileptiforme aparece en las mismas areas del cerebro. El enlentecimiento focal
+ y las descargas epileptiformes focales son diferentes y significan cosas diferentes (descargas epileptiformes focales: disminución del umbral
+ para crisis epilépticas focales en esa area; enlentecimiento focal: area focal del cerebro que es funcionalmente o estructuralmente anormal).
+ Las descargas epileptiformes focales y el enlentecimiento focal pueden ocurrir independientemente: un area anormal del cerebro no es necesariamente epileptogénica,
+ pero las descargas epileptiformes focales y el enlentecimiento focal ocurren juntos más frecuentemente que lo esperado por simple azar.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowingsharpwaves1" src="EEG10_img/focalslowingsharpwaves1.png" width=1200px heigth=1000px>
+	<figcaption>Este segmento del EEG muestra enlentecimiento temporal izquierdo con ondas agudas entremezcladas con el enlentecimiento.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowingsharpwaves2" src="EEG10_img/focalslowingsharpwaves2.png" width=1200px heigth=1000px>
+	<figcaption>Mismo segmento del EEG que el anterior. La región temporal izquierda tiene regiones más lentas que la región temporal derecha.
+ Las flechas rojas marcan ondas agudas en T7. Este es el mismo paciente que tuvo enlentecimiento temporal izquierdo sin descargas epileptiformes
+ en el segmento del EEG en la Pregunta 1.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowingsharpwaves3" src="EEG10_img/focalslowingsharpwaves3.png" width=1200px heigth=1000px>
+	<figcaption>Otro ejemplo mostrando el enlentecimiento temporal izquierdo con ondas agudas en el mismo paciente.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>El enlentecimiento focal puede ser <b>enlentecimiento focal intermitente</b>, cuando el enlentecimiento afecta un area del cerebro algunas veces,
+ pero otras veces el mismo area del cerebro muestra ritmos normales o <b>enlentecimiento focal continuo</b>, cuando el enlentecimiento focal
+ ocurre todo el tiempo o la gran mayoría del tiempo. Esta distinción no es particularmente específica de la etiología. El enlentecimiento focal postictal
+ tiende a aparecer sólo una vez tras una crisis epiléptica y desaparecer después, pero otras etiologías como tumores o infartos cerebrales pueden aparecer
+ como enlentecimiento focal intermitente o como enlentecimiento focal continuo.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>ENLENTECIMIENTO GENERALIZADO</b></h2>
+<br>
+<p>El enlentecimiento generalizado ocurre cuando los ritmos del EEG son más lentos de lo esperado por edad, fase del ciclo sueño-vigilia, y condición fisiológica
+ y este enlentecimiento anormal afecta todas las areas del cerebro difusamente.</p>
+
+
+<br>
+<br>
+
+
+<form id="question4" name="question4">
+<p><b>P4. Señala todas las respuestas correctas sobre el EEG de abajo:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG10_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q4b" name="question" value="b"> Este segmento del EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q4c" name="question" value="c"> Este es un segmento anormal del EEG<br>
+<input type="checkbox" id="q4d" name="question" value="d"> La mayoría de las ondas cerebrales en este segmento del EEG están entre 3Hz y 5Hz<br>
+<input type="checkbox" id="q4e" name="question" value="e"> Las ondas lentas difusas como estas pueden ocurrir en sueño profundo o en un cerebro anormal<br>
+<input type="checkbox" id="q4f" name="question" value="f"> Se necesita más información para interpretar este segmento del EEG<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question5" name="question5">
+<p><b>P5. Mientras lees el segmento de EEG de abajo te preguntas sobre la edad del paciente. Descubres que el paciente tiene 39 años de edad
+ cuando se hizo el EEG. Puedes concluir que:</b></p>
+<figure>
+	<img id="Q5_1" src="EEG10_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Los adultos no tienen ritmos en el rango delta<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Este segmento del EEG puede representar hiperventilación<br>
+<input type="checkbox" id="q5d" name="question" value="d"> Este segmento del EEG puede representar estimulación lumínica intermitente<br>
+<input type="checkbox" id="q5e" name="question" value="e"> Hay descargas epileptiformes en este segmento del EEG<br>
+<input type="checkbox" id="q5f" name="question" value="f"> Este es un segmento anormal del EEG<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question6" name="question6">
+<p><b>P6. Mientras lees el segmento del EEG de abajo sabes que el paciente es un adulto, la enfermera te cuenta que el paciente estaba
+ despierto durante este segmento del EEG, y el paciente no estaba hiperventilando. Ahora puedes concluir que:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG10_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> Esto es enlentecimiento generalizado continuo<br>
+<input type="checkbox" id="q6b" name="question" value="b"> Esto es enlentecimiento generalizado intermitente<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Los ritmos en la porción media de este segmento son aproximadamente 2-3 Hz<br>
+<input type="checkbox" id="q6d" name="question" value="d"> El enlentecimiento en este segmento del EEG sólo puede significar función anormal del cerebro<br>
+<input type="checkbox" id="q6e" name="question" value="e"> El enlentecimiento intermitente con aparición y final súbitos sólo pueden significar una transición rápida a la fase III del sueño<br>
+<input type="checkbox" id="q6f" name="question" value="f"> Se necesita más información<br>
+<input id="buttonQ6" type="button" value="¡Ya está!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowingsharpwaves1" src="EEG10_img/generalizedslowingsharpwaves1.png" width=1200px heigth=1000px>
+	<figcaption>Este EEG muestra enlentecimiento generalizado a 1-2 Hz con frecuentes puntas-ondas generalizadas.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowingsharpwaves2" src="EEG10_img/generalizedslowingsharpwaves2.png" width=1200px heigth=1000px>
+	<figcaption>Este EEG muestra enlentecimiento generalizado a 1-2 Hz con frecuentes puntas-ondas generalizadas. Cuando las descargas epileptiformes
+ son tan frecuentes es difícil diferenciar el enlentecimiento que viene de las descargas punta-ondas del enlentecimiento generalizado.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowingsharpwaves3" src="EEG10_img/generalizedslowingsharpwaves3.png" width=1200px heigth=1000px>
+	<figcaption>En periodos del EEG del mismo paciente donde las puntas-ondas generalizadas son menos frecuentes, aparece más claramente
+ que hay un enlentecimiento generalizado del EEG aparte del enlentecimiento de los complejos punta-onda generalizados.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowing1" src="EEG10_img/generalizedslowing1".png" width=1200px heigth=1000px>
+	<figcaption>Como con el enlentecimiento focal, puede o puede que no se acompañe de descargas epileptiformes. En este caso, hay
+ enlentecimiento generalizado a 2-3 Hz sin actividad epileptiforme.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowing2" src="EEG10_img/generalizedslowing2".png" width=1200px heigth=1000px>
+	<figcaption>Este es otro ejemplo de enlentecimiento generalizado a 2-3 Hz del mismo paciente que en la figura superior.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Como con el enlentecimiento focal, el enlentecimiento generalizado puede ser <b>enlentecimiento generalizado intermitente</b>, cuando el enlentecimiento
+ generalizado aparece algunas veces, pero otras veces el cerebro muestra ritmos normales o <b>enlentecimiento generalizado intermitente</b>, cuando el
+ enlentecimiento generalizado ocurre todo el tiempo o la gran mayoría del tiempo. Esta distinción no es particularmente específica de la etiología del
+ enlentecimiento. Tanto el enlentecimiento intermitente como continuo significa disfunción difusa del cerebro y las etiologías causantes pueden ser
+ muy variadas.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowing3" src="EEG10_img/generalizedslowing3".png" width=1200px heigth=1000px>
+	<figcaption>Este es un segmento del EEG con enlentecimiento generalizado intermitente a 4 Hz en un paciente que, en otros momentos del EEG, tiene
+ un ritmo posterior dominante de 8 Hz. Recuerda que un ritmo de 4 Hz puede ser normal en un niño joven durante la vigilia, pero es anormal en niños mayores y adultos.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<form id="question7" name="question7">
+<p><b>P7. Mientras lees un EEG de un niño de 10 años durante la vigilia te encuentras los segmentos de abajo. Señala todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG10_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q7_2" src="EEG10_img/Q7.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q7a" name="question" value="a"> Hay partes del EEG con enlentecimiento generalizado a 4-5 Hz de alta amplitud<br>
+<input type="checkbox" id="q7b" name="question" value="b"> Hay descargas epileptiformes en este segmento del EEG<br>
+<input type="checkbox" id="q7c" name="question" value="c"> Hay artefacto muscular en este segmento del EEG<br>
+<input type="checkbox" id="q7d" name="question" value="d"> Hay artefacto de parpadeo en este segmento del EEG<br>
+<input type="checkbox" id="q7e" name="question" value="e"> Abrir los ojos hará que los ritmos de alta amplitud desaparezcan<br>
+<input id="buttonQ7" type="button" value="¡Ya está!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Tras revisar esta página has aprendido mucho sobre el enlentecimiento. El enlentecimiento puede afectar todo el cerebro (enlentecimiento generalizado)
+ o sólo algunas areas (enlentecimiento focal). El enlentecimiento puede aparecer de vez en cuando (enlentecimiento intermitente) o puede aparecer todo el tiempo
+ o la gran mayoría del tiempo (enlentecimiento continuo).<br><br>
+Esto nos da los cuatro tipos de enlentecimiento:
+Enlentecimiento focal intermitente<br> 
+Enlentecimiento focal continuo<br> 
+Enlentecimiento generalizado intermitente<br> 
+Enlentecimiento generalizado continuo<br>
+Esos tipos de enlentecimiento pueden aparecer solos o en combinación con actividad epileptiforme. Los distintos tipos de enlentecimiento pueden aparecer
+ en el mismo paciente (por ejemplo, un paciente con enlentecimiento generalizado y, además, enlentecimiento focal; o un paciente con enlentecimiento focal
+ en varias areas del cerebro).<br><br>
+Antes de considerar cualquier tipo de enlentecimiento como anormal, asegúrate de descartar que el enlentecimiento no es fisiológico (niños pequeños, sueño,
+ hiperventilación...) o un artefacto (paciente cepillándose los dientes, tos, máquinas en la unidad de cuidados intensivos...).<br><br>
+Sigamos aprendiendo.</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
