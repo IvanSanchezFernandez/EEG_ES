@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG11 ¡Crisis epilépticas!</title>
+<link href = "EEG11_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG11_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG11: ¡Crisis epilépticas!</h1>
+<p>Las crisis epilépticas son el rasgo más característico de la epilepsia.<br><br>En muchos pacientes las crisis epilépticas son (afortunadamente)
+ raras y, por lo tanto, raramente capturadas en el EEG. De todas formas, cuando las crisis epilépticas se capturan en el EEG, proveen información
+ sobre el tipo de crisis epiléptica, su duración su lateralización y la potencial localización del foco de la crisis epiléptica. Además (si el paciente
+ aparece en el video durante la crisis epiléptica), también da información sobre la correlación entre los hallazgos del EEG y la semiología clínica.
+ Algunas crisis epilépticas o combinación de crisis epilépticas ayudan a definir el síndrome epiléptico del paciente.<br><br>
+En un mundo perfecto, todas las crisis epilépticas tendrían los mismos rasgos característicos y serían fáciles de identificar cuando ocurrieran.
+ Por supuesto, en el mundo real no hay características universales que permitan definir una crisis epiléptica y hay muchos patrones diferentes en el EEG
+ que se pueden encontrar durante una crisis epiléptica.<br><br>Intentemos aprender los patrones más típicos.</p>
+
+
+<br>
+<br>
+
+
+<h2><b>CRISIS EPILÉPTICAS CON COMPLEJOS DE PUNTA-ONDA GENERALIZADOS</b></h2>
+<br>
+<figure>
+	<center><img id="absence1" src="EEG11_img/absence1.png" width=1200px heigth=1000px>
+	<figcaption>El comienzo de este segmento del EEG muestra un artefacto muscular en las regiones temporales e, incluso, lo que parece ser un
+ ritmo posterior dominante. Tras aproximadamente el quinto segundo, algo rompe abruptamente el ritmo y continúa rítmicamente a aproximadamente 3 Hz.
+ Esta es una crisis de ausencia típica con el patrón típico de complejos punta-onda a aproximadamente 3 Hz. Probablemente es difícil de identificar
+ a este voltaje.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence2" src="EEG11_img/absence2.png" width=1200px heigth=1000px>
+	<figcaption>Aumentando el voltaje por cada milímetro en vertical en el mismo segmento del EEG hace más fácil identificar
+ los complejos punta-onda a 3 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence3" src="EEG11_img/absence3.png" width=1200px heigth=1000px>
+	<figcaption>Aumentando incluso más el voltaje por cada milímetro en vertical en el mismo segmento del EEG hace incluso más claro
+ el patrón de aproximadamente 3 complejos punta-onda por segundo que es característico de las crisis de ausencia típicas. Fíjate en el marcador de
+ voltaje azul en cada figura: muestra que el voltaje de esos complejos punta-onda es muy alto.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence4" src="EEG11_img/absence4.png" width=1200px heigth=1000px>
+	<figcaption>La crisis epiléptica que comenzó en el segmento de EEG previo continuó en la siguiente página y terminó abruptamente como se muestra en este segmento del EEG.</figcaption></center>
+</figure>
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>P1. Arrastra y suelta para emparejar los rasgos más característicos de las crisis de ausencia en cada síndrome epiléptico:</b>
+<br>
+<br>
+
+<div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b><br><br>Epilepsia de ausencias de la infancia</b></p>
+<br>
+<br>
+<div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b><br>Epilepsia mioclónica juvenil</b></p>
+<br>
+<br>
+<div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b><br>Síndrome de Lennox-Gastaut</b></p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<span id="drag1" data-div="drop1" draggable="true" ondragstart="drag(event)"><b>Complejos de punta-onda generalizados a 3 Hz&emsp;</b></span></div>
+<br><br>
+<span id="drag2" data-div="drop1" draggable="true" ondragstart="drag(event)"><b>Desencadenados frecuentemente por hiperventilación&emsp;</b></span></div>
+<span id="drag3" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Polipuntas&emsp;</b></span></div>
+<br><br>
+<span id="drag4" data-div="drop3" draggable="true" ondragstart="drag(event)"><b>Aparición y final progresivos con transición suave hacia el resto de patrones de base en el EEG&emsp;</b></span></div>
+<br><br>
+<span id="drag5" data-div="drop3" draggable="true" ondragstart="drag(event)"><b>Complejos punta-onda de 1 Hz a 2.5 Hz&emsp;</b></span></div>
+<span id="drag6" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Frecuentemente desencadenados por la estimulación luminosa intermitente&emsp;</b></span></div>
+<br><br>
+<span id="drag7" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Complejos punta-onda generalizados a 4 Hz to 5 Hz&emsp;</b></span></div>
+<br>
+<br>
+<input id="buttonQ1" type="button" value="¡Muéstrame todas las respuestas, por favor!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+
+</div>
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<p>Las crisis de ausencia típicas se caracterizan por un comienzo generalizado con complejos punta-onda a 3 Hz. El comienzo y final de esas crisis epilépticas
+ es típicamente abrupto con una transición brusca entre el EEG normal y la crisis epiléptica. Por esto, las crisis de ausencia típicas son relativamente
+ fáciles de identificar. Son tan típicas y características que se muestran como el primer ejemplo de una crisis epiléptica en los libros de texto en la
+ facultad de medicina.<br><br>Incluso este patrón típico tiene un par de características que son algo irregulares. Algunas veces, la crisis epiléptica
+ comienza con un inicio de 1-2 segundos que puede ser más focal o lateralizado. También, la frecuencia no siempre es de 3 Hz, pero puede evolucionar de
+ aproximadamente 4 Hz al comienzo de la crisis epiléptica a aproximadamente 2 Hz hacia el final de la crisis epiléptica.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence5" src="EEG11_img/absence5.png" width=1200px heigth=1000px>
+	<figcaption>La misma crisis epiléptica mostrada arriba tiene un inicio que aparece más prominente en el hemisferio izquierdo
+ que en el hemisferio derecho (corchetes rojos). También muestra que al comienzo, la crisis epiléptica tiende a tener complejos
+ punta-onda más rápidos, cercanos a los 4 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence6" src="EEG11_img/absence6.png" width=1200px heigth=1000px>
+	<figcaption>La frecuencia tiende a enlentecerse y, hacia el final de la crisis epiléptica es cercano a los 2 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<form id="question2" name="question2">
+<p><b>P2. Mientras evalúas una crisis epiléptica que parece una crisis de ausencia típica, ¿qué características te harían sospechar de un inicio focal?</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> Un inicio que aparece consistentemente en el mismo hemisferio en varias crisis epilépticas<br>
+<input type="radio" id="q2" name="question" value="b"> Un inicio que aparece a veces en el hemisferio derecho y a veces en el hemisferio izquierdo<br>
+<input type="radio" id="q2" name="question" value="c"> Una crisis de ausencia típica sin ninguna focalidad de inicio<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>CRISIS EPILÉPTICAS CON (POLI)PUNTAS RÁPIDAS GENERALIZADAS</b></h2>
+<br>
+<figure>
+	<center><img id="tonic1" src="EEG11_img/tonic1.png" width=1200px heigth=1000px>
+	<figcaption>Después de aproximadamente el tercer segundo, algo rompe abruptamente el ritmo. Son puntas generalizadas
+ a una frecuencia rápida de aproximadamente 10-20 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="tonic2" src="EEG11_img/tonic2.png" width=1200px heigth=1000px>
+	<figcaption>La crisis epiléptica en el segmento de EEG previo continúa y finaliza abruptamente como se muestra en este segmento del EEG.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="tonic3" src="EEG11_img/tonic3.png" width=1200px heigth=1000px>
+        <br clear="all" />
+        <br>
+	<center><img id="tonic4" src="EEG11_img/tonic4.png" width=1200px heigth=1000px>
+	<figcaption>Otro ejemplo de este tipo de crisis epiléptica en el EEG. Frecuentemente, aunque no siempre, la correlación clínica
+ de esta crisis epiléptica es una crisis generalizada tónica.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="spasms1" src="EEG11_img/spasms1.png" width=1200px heigth=1000px>
+	<figcaption>Un espasmo infantil puede considerarse como una variante de una crisis epiléptica tónica generalizada. Fíjate en el
+ ritmo rápido y la atenuación de voltaje que ocurre durante la fase señalada por el corchete rojo y diferencia el espasmo infantil del
+ (muy anormal) resto del EEG. Intenta fijarte en cómo el patrón de espasmo infantil es similar al patrón de la crisis tónica generalizada.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question3" name="question3">
+<p><b>P3. Señala todas las respuestas correctas sobre el segmento de EEG de abajo:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG11_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q3_2" src="EEG11_img/Q3.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> Esta es probablemente una crisis de ausencia típica<br>
+<input type="checkbox" id="q3b" name="question" value="b"> Esta es probablemente una crisis generalizada tónica<br>
+<input type="checkbox" id="q3c" name="question" value="c"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q3d" name="question" value="d"> No hay evolución en frecuencia y amplitud en esta crisis epiléptica<br>
+<input type="checkbox" id="q3e" name="question" value="e"> El inicio de esta crisis epiléptica es focal<br>
+<input type="checkbox" id="q3f" name="question" value="f"> La frecuencia de las puntas es de aproximadamente 4-5 Hz<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>CRISIS EPILÉPTICAS FOCALES CON EVOLUCIÓN EN FRECUENCIA, AMPLITUD, Y ÁREA AFECTADA</b></h2>
+<br>
+
+
+<p>Las crisis epilépticas focales están entre las que más claramente se ve la evolución en frecuencia, amplitud, y área afectada.</p>
+
+
+<br>
+
+
+<figure>
+	<center><img id="focal1" src="EEG11_img/focal1.png" width=1200px heigth=1000px>
+	<figcaption>Tras aproximadamente el tercer segundo, hay alguna actividad rítmica en los canales posteriores del
+ hemisferio izquierdo (principalmente T7-P7, P7-O1, C3-P3, P3-O1, y Cz-Pz).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal2" src="EEG11_img/focal2.png" width=1200px heigth=1000px>
+	<figcaption>Esta actividad rítmica persiste durante algunos segundos con una evolución mínima en frecuencia, amplitud, y área afectada.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal3" src="EEG11_img/focal3.png" width=1200px heigth=1000px>
+	<figcaption>La actividad rítmica continúa con mínima evolución en frecuencia, amplitud, y área afectada.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal4" src="EEG11_img/focal4.png" width=1200px heigth=1000px>
+	<figcaption>Hacia el final de este segmento del EEG la frecuencia se enlentece y la amplitud aumenta ligeramente. El área afectada
+ incluye canales del EEG más anteriores.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal5" src="EEG11_img/focal5.png" width=1200px heigth=1000px>
+	<figcaption>El enlentecimiento en la frecuencia y el aumento de amplitud es más claro aún en este segmento.
+ Además, la actividad rítmica se extiende a canales más anteriores en el hemisferio izquierdo.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal6" src="EEG11_img/focal6.png" width=1200px heigth=1000px>
+	<figcaption>Al final de la crisis epiléptica, la frecuencia es mucho más lenta (2-3 Hz) que al principio, la amplitud es mucho
+ más alta, y el área afectada incluye el hemisferio izquierdo completo y algunos canales del hemisferio derecho. Compara con el segmento
+ del EEG que muestra el inicio de la crisis epiléptica. <b>Esto es, la evolución en frecuencia, amplitud, y área afectada son los rasgos definitorios de la mayoría de crisis epilépticas.</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>El lóbulo temporal es un foco frecuente de crisis epilépticas, tanto en adultos como en niños. Fíjate en la evolución de la ritmicidad en la región temporal derecha en la crisis epiléptica de abajo.</p>
+
+
+<br>
+
+
+<figure>
+	<center><img id="focal7" src="EEG11_img/focal7.png" width=1200px heigth=1000px>
+	<figcaption>Incremento de actividad semi-rítmica en T8 y, en menor medida, C4.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal8" src="EEG11_img/focal8.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal9" src="EEG11_img/focal9.png" width=1200px heigth=1000px>
+	<figcaption>Lento incremento de actividad semi-rítmica con una frecuencia progresivamente más lenta y un aumento progresivo de la amplitud
+ en la región temporal derecha.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal10" src="EEG11_img/focal10.png" width=1200px heigth=1000px>
+	<figcaption>El enlentecimiento, aumento de amplitud, y aumento del área afectada son evidentes ya.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal11" src="EEG11_img/focal11.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal12" src="EEG11_img/focal12.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal13" src="EEG11_img/focal13.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal14" src="EEG11_img/focal14.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal15" src="EEG11_img/focal15.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal16" src="EEG11_img/focal16.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal17" src="EEG11_img/focal17.png" width=1200px heigth=1000px>
+	<figcaption>Cambios de frecuencia y amplitud durante la crisis epiléptica con periodos de enlentecimiento y periodos de
+ aceleración: <b>La evolución es una de las características principales de una crisis epiléptica.</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Sigue la evolución de una crisis epiléptica abajo. ¿Ves la evolución en frecuencia, amplitud, y área afectada?</p>
+<br>
+
+
+<figure>
+	<center><img id="focal18" src="EEG11_img/focal18.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal19" src="EEG11_img/focal19.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal20" src="EEG11_img/focal20.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal21" src="EEG11_img/focal21.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal22" src="EEG11_img/focal22.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal23" src="EEG11_img/focal23.png" width=1200px heigth=1000px>
+	<figcaption><b>La evolución es una de las características definitorias de las crisis epilépticas.</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Tras revisar esta página has aprendido un poco sobre los patrones del EEG más frecuentemente encontrados en una crisis epiléptica.
+ Hay muchas variaciones de los patrones explicados arriba (por ejemplo, crisis epilépticas con polipuntas rápidas pueden ser focales, crisis
+ focales pueden generalizar, etc.). También hay muchos otros patrones en el EEG que aparecen con las crisis epilépticas. De todas formas,
+ aprender los patrones explicados arriba es un buen primer paso.<br><br>
+Has aprendido que una crisis epiléptica evoluciona en frecuencia (cambios de ritmo), amplitud (el patrón en el EEG cambia de amplitud), y
+ el área afectada tiende a cambiar (típicamente, aumentar) durante la crisis epiléptica.<br><br>
+La evolución es probablemente la característica más definitoria de una crisis epiléptica y es común a todos los tipos de crisis epilépticas.<br><br>
+Sigamos aprendiendo.</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
