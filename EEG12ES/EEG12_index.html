@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+
+<head>
+
+
+<title>EEG12 Cómo (no) usar el EEG</title>
+<link href = "EEG12_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG12_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG12: Cómo (no) usar el EEG</h1>
+
+
+<br>
+<br>
+
+
+
+<form id="question1" name="question1">
+<p><b>P1. Uno de tus colegas evalúa a un paciente con movimientos anormales. La sospecha de que esos movimientos anormales son crisis epilépticas es bajo pero "para estar seguros" tu colega decide
+ hacer un EEG para "descartar epilepsia". El resultado del EEG es normal. Tu colega dice: "hemos descartado epilepsia". Tu mejor respuesta es:</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> ¡Definitivamente! Hemos descartado epilepsia<br>
+<input type="radio" id="q1" name="question" value="b"> No. No hemos descartado epilepsia<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. Tu colega quiere estar "completamente seguro" que "descarta epilepsia" y, por lo tanto, hace un video-EEG de larga duración durante 10 días.
+ El EEG durante esos 10 días es completamente normal. Tu colega comenta: "hemos descartado definitivamente epilepsia". Tu mejor respuesta es:</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> ¡Definitivamente! Hemos descartado epilepsia<br>
+<input type="radio" id="q2" name="question" value="b"> No. No hemos descartado epilepsia<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h2><b>DIAGNÓSTICO DE EPILEPSIA</b></h2>
+<br>
+<p><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>El diagnóstico de crisis epilépticas es un diagnóstico clínico.
+ El diagnóstico de epilepsia es un diagnóstico clínico.</a> A veces un EEG puede ayudar a hacer el diagnóstico de epilepsia <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>(mira la Tabla 2)</a> en el contexto clínico apropriado, pero eso es todo.
+ A pesar del hecho de que, en algunos ambientes con un pobre conocimiento de epilepsia es frecuente hacer un EEG para "descartar epilepsia",
+ nunca se puede "descartar epilepsia" con un EEG.</p>
+
+
+<br>
+<br>
+
+
+<form id="question3" name="question3">
+<p><b>P3. Te encuentras con tu colega algún tiempo después. Tu colega está contento porque un nuevo EEG prolongado capturó 5 de los eventos
+ clínicos que estaba evaluando y ninguno tenía ningún patrón sugestivo de crisis epilépticas durante los eventos. Ahora tu colega dice orgulloso:
+ "finalmente hemos descartado que sean crisis epilépticas" y "finalmente hemos descartado epilepsia" en este paciente. Tu mejor respuesta es:</b></p>
+<br>
+<input type="radio" id="q3" name="question" value="a"> ¡Definitivamente! Hemos descartado crisis epilépticas. Hemos descartado epilepsia<br>
+<input type="radio" id="q3" name="question" value="b"> No. No hemos descartado crisis epilépticas. No hemos descartado epilepsia<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>El diagnóstico de crisis epilépticas es un diagnóstico clínico.
+ El diagnóstico de epilepsia es un diagnóstico clínico.</a> Algunas veces un EEG puede ayudar a hacer un diagnóstico de epilepsia <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>(Mira la Tabla 2)</a> en el contexto clínico adecuado, pero eso es todo.
+ No existe "descartar crisis epilépticas (focales)" o "descartar epilepsia" con un EEG.</p>
+
+
+<br>
+<br>
+
+
+<form id="question4" name="question4">
+<p><b>P4. Te encuentras a tu colega (de nuevo). Tu colega está muy contento porque acaba de diagnosticar a un paciente distinto con epilepsia.
+ El paciente era un joven que se presentó con lo que parecía un síncope. El paciente se desmayó en un contexto que era altamente sugestivo de
+ un síncope vasovagal. De todas formas, tu colega "para estar seguros" hizo un EEG y el EEG mostró descargas epileptiformes. Tu colega
+ diagnosticó al paciente con epilepsia y comenzó tratamiento con medicaciones antiepilépticas. Tu colega está muy orgulloso de ello. Tu
+ mejor respuesta es:</b></p>
+<br>
+<input type="radio" id="q4" name="question" value="a"> ¡Muy bien! Felicidades<br>
+<input type="radio" id="q4" name="question" value="b"> Deberías revisar la definición de epilepsia. Tu paciente no cumple los criterios de epilepsia y no debería estar tomando medicaciones antiepilépticas<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>ACTIVIDAD EPILEPTIFORME</b></h2>
+<br>
+<p><a href='https://pubmed.ncbi.nlm.nih.gov/8082631/' target='_blank'>La actividad epileptiforme ocurre en (una pequeña proporción de) personas que nunca han tenido crisis epilépticas y nunca las tendrán.</a>
+ Hacer EEG en pacientes con eventos que clínicamente no parecen crisis epilépticas no clarificará mucho. La actividad epileptiforme en este
+ contexto probablemente representará <a href='https://pubmed.ncbi.nlm.nih.gov/15652731/' target='_blank'>un hallazgo incidental que no debería ser tratado.</a> Recuerda:
+ los tests no pueden reemplazar a una historia clínica apropriada. <br><br> El primer paso en diagnosticar crisis epilépticas y epilepsia es tomar una historia clínica apropriada, el segundo paso
+ en diagnosticar crisis epilépticas y epilepsia es tomar una historia clínica apropriada, el tercer paso en diagnosticar crisis epilépticas y epilepsia es tomar una historia clínica apropriada.
+ Solamente tras asegurarse de que has tomado una historia clínica apropriada y has hecho un examen físico apropriado, hacer un EEG (o no) debe incluir respuestas a las preguntas:
+ ¿cómo va a contribuir el EEG al diagnóstico?, ¿es mejor un EEG de rutina (probablemente capturará actividad epileptiforme, pero es poco probable que capture los eventos en cuestión)
+ o un EEG prolongado (más probable que capture los eventos en cuestión)?, si el EEG muestra descargas epileptiformes, ¿cómo cambiará eso (o no) el diagnóstico y el tratamiento?</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question5" name="question5">
+<p><b>P5. Te encuentras a tu colega (de nuevo) algún tiempo más tarde. Un paciente se presentó con una crisis epiléptica en el contexto de consumo de cocaína.
+ El evento, por la descripción de tu colega, parecía ser una crisis epiléptica. Tu colega está contento porque tu colega diagnosticó al paciente
+ de "transtorno de convulsiones" y comenzó tratamiento con medicaciones antiepilépticas "para estar seguros". Cuando preguntas a tu colega a qué
+ se refiere con "transtorno de convulsiones", tu colega responde "el paciente tuvo una convulsión, el paciente tiene un 'transtorno de convulsiones',
+ el paciente necesita medicación antiepiléptica". Tu colega está extremadamente orgulloso de sus habilidades clínicas. Tu mejor respuesta es:</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Gran trabajo. Felicidades<br>
+<input type="radio" id="q1" name="question" value="b"> Deberías revisar la definición de epilepsia. Tu paciente no cumple los criterios para un diagnóstico de epilepsia no debería recibir tratamiento con medicaciones antiepilépticas.<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>El EEG es un test muy útil. De todas formas el EEG es también un test con muchas limitaciones. Los EEGs no "descartan crisis epilépticas".
+ Los EEGs no "descartan epilepsia". La actividad epileptiforme en el EEG puede ocurrir en personas que nunca han tenido crisis epilépticas y
+ que nunca las tendrán. Por lo tanto, es sorprendente que, en ciertos ambientes, los EEGs se usen para "descartar crisis epilépticas", para
+ "descartar epilepsia", o para hacer un diagnóstico de epilepsia cuando se encuentra actividad epileptiforme (independientemente del contexto
+ clínico). La popularidad del término "desorden de convulsiones" es particularmente preocupante porque lleva directamente a dañar a los pacientes
+ (medicaciones antiepilépticas en pacientes que no las necesitan o tratamiento con una duración incorrecta en pacientes que la necesitan).<br><br>Tu colega en las preguntas de arriba representa
+ algunos de los errores más frecuentes en el uso del EEG. Desafortunadamente, esos errores dañan a los pacientes porque: 1) hay pacientes
+ que tienen epilepsia, pero su epilepsia se "descarta" con un EEG normal y, por lo tanto, esos pacientes no reciven las medicaciones antiepilépticas
+ que necesitan, algunas veces durante años y 2) hay pacientes que no tienen epilepsia, pero tienen actividad epileptiforme en el EEG lo que les hace
+ recibir medicaciones antiepilépticas que no necesitan, algunas veces durante años. <br><br> Asegúrate de que entiendes estos conceptos simples, pero muy importantes
+ y que no caes en los mismos errores que tu colega en las preguntas.</b><br>
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+
+</html>
