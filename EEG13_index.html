@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG13 De nuevo, otro examen</title>
+<link href = "EEG13_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG13_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG13: De nuevo, otro examen</h1>
+<p>En este momento ya has aprendido la mayoría de las cosas básicas que necesitas para empezar leer un EEG. ¡Hagamos un examen para solidificar todo
+ lo que has aprendido! También aprenderás algo nuevo...</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>P1. En el segmento de EEG abajo, marca todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG13_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q1a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q1b" name="question" value="b"> Este segmento del EEG pertenece a la fase II del sueño<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Este segmento del EEG pertenece a la fase I del sueño<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Este segmento del EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Este segmento del EEG tiene enlentecimiento focal<br>
+<input type="checkbox" id="q1f" name="question" value="f"> Este segmento del EEG tiene actividad epileptiforme<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture_2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture">
+<br>
+<figure>
+<img id="answerQ1_picture_3">
+</figure>
+<br clear="all" /></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. Mientras lees un EEG de un niño de 6 años te encuentras con el segmento de abajo. Indica todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG13_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q2_1" src="EEG13_img/Q2.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> Hay actividad epileptiforme en esos segmentos<br>
+<input type="checkbox" id="q2b" name="question" value="b"> No hay actividad epileptiforme en esos segmentos<br>
+<input type="checkbox" id="q2c" name="question" value="c"> Este segmento del EEG pertenece a la fase III del sueño<br>
+<input type="checkbox" id="q2d" name="question" value="d"> No me sorprendería si aparecieran crisis de ausencia en este EEG<br>
+<input type="checkbox" id="q2e" name="question" value="e"> No me sorprendería si aparecieran crisis tónicas en este EEG<br>
+<input type="checkbox" id="q2f" name="question" value="f"> Hay enlentecimiento generalizado continuo<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. Sobre el segmento de EEG abajo, indica todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG13_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q3b" name="question" value="b"> Hay enlentecimiento generalizado continuo<br>
+<input type="checkbox" id="q3c" name="question" value="c"> Hay enlentecimiento focal continuo<br>
+<input type="checkbox" id="q3d" name="question" value="d"> Este segmento del EEG pertenece a la fase REM del sueño<br>
+<input type="checkbox" id="q3e" name="question" value="e"> Hay puntas en C3<br>
+<input type="checkbox" id="q3f" name="question" value="f"> Hay puntas en O2<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>P4. Sobre el segmento de EEG abajo, indica todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG13_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q4b" name="question" value="b"> Este segmento del EEG pertenece a la fase II del sueño<br>
+<input type="checkbox" id="q4c" name="question" value="c"> El ritmo posterior dominante es de aproximadamente 6 Hz<br>
+<input type="checkbox" id="q4d" name="question" value="d"> El ritmo posterior dominante es de aproximadamente 10 Hz<br>
+<input type="checkbox" id="q4e" name="question" value="e"> Hay ondas lentas posteriores de la juventud<br>
+<input type="checkbox" id="q4f" name="question" value="f"> Hay artefacto de parpadeo<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question5" name="question5">
+<p><b>P5. Mientras haces estimulación luminosa intermitente en un paciente te encuentras con la respuesta en el EEG de abajo. Señala todas
+ las respuestas correctas:</b></p>
+<figure>
+	<img id="Q5_1" src="EEG13_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Si ves un EEG como este llama rápido al equipo de intervención rápida del hospital<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Si el paciente cierra sus ojos, la respuesta desaparece<br>
+<input type="checkbox" id="q5d" name="question" value="d"> Esta respuesta se llama respuesta fotoparoxística<br>
+<input type="checkbox" id="q5e" name="question" value="e"> Este segmento del EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q5f" name="question" value="f"> Este segmento tiene actividad epileptiforme<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question6" name="question6">
+<p><b>P6. El paciente de la pregunta 5, unos segundos tras la estimulación luminosa intermitente se pone unas gafas y repite la
+ estimilación luminosa intermitente de nuevo. Sobre el segmento del EEG abajo, indica todos las respuestas correctas:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG13_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q6b" name="question" value="b"> La desaparición de la respuesta fotoparoxística con las gafas significa que el paciente tiene un defecto de refracción<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Las gafas antiepilépticas como estas deben aplicarse a todos los pacientes con epilepsy<br>
+<input type="checkbox" id="q6d" name="question" value="d"> Las gafas que se ha puesto el paciente probablemente tienen un filtro de color<br>
+<input type="checkbox" id="q6e" name="question" value="e"> En este paciente, llevar esas gafas puede reducir el riesgo de crisis epilépticas<br>
+<input type="checkbox" id="q6f" name="question" value="f"> Distintos pacientes tienen distinta sensibilidad a distintos colores en la estimulación luminosa intermitente<br>
+<input id="buttonQ6" type="button" value="¡Ya está!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question7" name="question7">
+<p><b>P7. Sobre el segmento de EEG abajo, indica todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG13_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q7a" name="question" value="a"> Este es un segmento de EEG normal<br>
+<input type="checkbox" id="q7b" name="question" value="b"> Este segmento tiene complejos punta-onda generalizados<br>
+<input type="checkbox" id="q7c" name="question" value="c"> Este segmento del EEG tiene descargas epileptiformes focales<br>
+<input type="checkbox" id="q7d" name="question" value="d"> Este segmento del EEG tiene ondas agudas del vertex<br>
+<input type="checkbox" id="q7e" name="question" value="e"> Este segmento del EEG contiene husos del sueño<br>
+<input type="checkbox" id="q7f" name="question" value="f"> Este segmento del EEG no contiene actividad epileptiforme<br>
+<input id="buttonQ7" type="button" value="¡Ya está!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ7_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ7_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+ 
+
+
+
+<form id="question8" name="question8">
+<p><b>P8. Sobre el EEG abajo, señala todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q8_1" src="EEG13_img/Q8.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q8a" name="question" value="a"> Este es un segmento del EEG normal<br>
+<input type="checkbox" id="q8b" name="question" value="b"> Este segmento del EEG corresponde a la fase I del sueño<br>
+<input type="checkbox" id="q8c" name="question" value="c"> Este segmento del EEG corresponde a la vigilia<br>
+<input type="checkbox" id="q8d" name="question" value="d"> Este segmento del EEG contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q8e" name="question" value="e"> Este segmento del EEG contiene actividad epileptiforme en la región centrotemporal<br>
+<input type="checkbox" id="q8f" name="question" value="f"> Este segmento del EEG contiene actividad epileptiforme en la región frontal<br>
+<input id="buttonQ8" type="button" value="¡Ya está!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<figure>
+<img id="answerQ8_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ8_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ8_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question9" name="question9">
+<p><b>P9. Sobre el segmento de EEG abajo, señala todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q9_1" src="EEG13_img/Q9.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q9a" name="question" value="a"> Este segmento del EEG es normal<br>
+<input type="checkbox" id="q9b" name="question" value="b"> Las alteraciones en la región frontal representan ondas agudas<br>
+<input type="checkbox" id="q9c" name="question" value="c"> Este segmento del EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q9d" name="question" value="d"> Este segmento del EEG contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q9e" name="question" value="e"> Este segmento del EEG pertenece a la fase II del sueño<br>
+<input type="checkbox" id="q9f" name="question" value="f"> Este segmento del EEG tiene actividad epileptiforme<br>
+<input id="buttonQ9" type="button" value="¡Ya está!" onclick="checkQ9();">
+</form>
+
+<div id="after_submitQ9">
+<p id="answerQ9"></p>
+<br>
+<p id = "afterQ9_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question10" name="question10">
+<p><b>P10. En este segmento de EEG en un niño de 9 años, señala todas las respuestas correctas:</b></p>
+<figure>
+	<img id="Q10_1" src="EEG13_img/Q10.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q10a" name="question" value="a"> Este es un segmento normal del EEG<br>
+<input type="checkbox" id="q10b" name="question" value="b"> Hay enlentecimiento bitemporal<br>
+<input type="checkbox" id="q10c" name="question" value="c"> Este segmento del EEG pertenece a la vigilia<br>
+<input type="checkbox" id="q10d" name="question" value="d"> Este segmento contiene ondas agudas del vertex<br>
+<input type="checkbox" id="q10e" name="question" value="e"> Hay enlentecimiento generalizado<br>
+<input type="checkbox" id="q10f" name="question" value="f"> Este segmento contiene actividad epileptiforme en la región frontal<br>
+<input id="buttonQ10" type="button" value="¡Ya está!" onclick="checkQ10();">
+</form>
+
+<div id="after_submitQ10">
+<p id="answerQ10"></p>
+<br>
+<figure>
+<img id="answerQ10_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ10_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ10_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ10_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Tras revisar esta página has solidificado algunos de los rasgos normales y anormales del EEG que has aprendido en páginas anteriores.</b></p>
+<br>
+
+<p><b>En particular, has visto que el enlentecimiento puede ser focal o generalizado (o ambos al mismo tiempo). El enlentecimiento generalizado es
+ sugestivo de una encefalopatía difusa sin especificar etiología. El enlentecimiento focal es sugestivo de una lesión funcional o estructural
+ en la región afectada por el enlentecimiento. 
+ Generalized slowing.</b></p>
+
+<br>
+
+<p><b>También has aprendido que la actividad delta rítmica occipital intermitente (OIRDA en inglés) y la asociación de OIRDA con un tipo de
+ epilepsia frecuente en la infancia (¿En qué epilepsia de la infancia aparece la actividad delta rítmica occipital intermitente (OIRDA)?.
+ Otro tipo de "enlentecimiento especial" sobre el que has aprendido es las ondas lentas posteriores de la juventud (una varienta normal que se ve
+ en jóvenes). Además, eres capaz de localizar la actividad epileptiforme mejor, incluso cuando aparecen al "final de la cadena".<br><br>
+¡Sigue aprendiendo!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
