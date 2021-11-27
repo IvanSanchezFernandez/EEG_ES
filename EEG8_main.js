@@ -31,7 +31,7 @@ function checkQ2() {
 
 	if (document.getElementById("q2a").checked == false && document.getElementById("q2b").checked == true && document.getElementById("q2c").checked == false && document.getElementById("q2d").checked == false && document.getElementById("q2e").checked == true && document.getElementById("q2f").checked == true) {
 		document.getElementById("after_submitQ2").style.visibility = "visible";
-		document.getElementById("answerQ2").innerHTML = "¡Correcto!<br><br> Este EEG contiene ondas agudas del vertex que son simétricas alrededor de la línea media (rectángulo rojo grande) y algunos husos del sueño (pequeños rectángulos rojos).<br><br>Aparte de esa actividad normal que define la fase II del sueño, hay puntas y ondas agudas en C4 (flechas rojas). Esta actividad epileptiforme rompe el ritmo y tiene un contorno afilado.";
+		document.getElementById("answerQ2").innerHTML = "¡Correcto!<br><br> Este EEG contiene ondas del vertex que son simétricas alrededor de la línea media (rectángulo rojo grande) y algunos husos del sueño (pequeños rectángulos rojos).<br><br>Aparte de esa actividad normal que define la fase II del sueño, hay puntas y ondas agudas en C4 (flechas rojas). Esta actividad epileptiforme rompe el ritmo y tiene un contorno afilado.";
 		document.getElementById("after_submitQ2").style.background = "lightgreen";
 		document.getElementById("answerQ2_picture").src = "EEG8_img/Q2.2.png";
 		document.getElementById("afterQ2_picture").innerHTML = "¡Muy bien!";
@@ -59,7 +59,7 @@ function checkQ3() {
 
 	if (document.getElementById("q3a").checked == true && document.getElementById("q3b").checked == true && document.getElementById("q3c").checked == false && document.getElementById("q3d").checked == true && document.getElementById("q3e").checked == true && document.getElementById("q3f").checked == false) {
 		document.getElementById("after_submitQ3").style.visibility = "visible";
-		document.getElementById("answerQ3").innerHTML = "¡Correcto!<br><br> Este EEG contiene ondas agudas del vertex que son simétricas alrededor de la línea media (rectángulo rojo grande) y algunos husos del sueño (rectángulos rojos pequeños).<br><br>No hay actividad epileptiforme en este segmento del EEG.";
+		document.getElementById("answerQ3").innerHTML = "¡Correcto!<br><br> Este EEG contiene ondas del vertex que son simétricas alrededor de la línea media (rectángulo rojo grande) y algunos husos del sueño (rectángulos rojos pequeños).<br><br>No hay actividad epileptiforme en este segmento del EEG.";
 		document.getElementById("after_submitQ3").style.background = "lightgreen";
 		document.getElementById("answerQ3_picture").src = "EEG8_img/Q3.2.png";
 		document.getElementById("afterQ3_picture").innerHTML = "¡Muy bien!";
@@ -280,7 +280,7 @@ function drop(ev) {
 
 function checkQ10() {
 		document.getElementById("after_submitQ10").style.visibility = "visible";
-		document.getElementById("answerQ10").innerHTML = "Vigilia: ritmo posterior dominante, artefacto de parpadeo, y artefacto muscular.<br><br>Somnolencia (fase I del sueño): ondas agudas del vertex, movimientos laterales lentos de los ojos.<br><br>Fase II del sueño: ondas agudas del vertex, husos del sueño.<br><br>Fase III del sueño: ondas lentas difusas, husos del sueño también presentes.";
+		document.getElementById("answerQ10").innerHTML = "Vigilia: ritmo posterior dominante, artefacto de parpadeo, y artefacto muscular.<br><br>Somnolencia (fase I del sueño): ondas del vertex, movimientos laterales lentos de los ojos.<br><br>Fase II del sueño: ondas del vertex, husos del sueño.<br><br>Fase III del sueño: ondas lentas difusas, husos del sueño también presentes.";
 		document.getElementById("after_submitQ10").style.background = "lightgreen";	
 }
 

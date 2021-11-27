@@ -277,7 +277,7 @@ function checkQ8() {
 
 	if (document.question6.question.value == "d") {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
-		document.getElementById("answerQ8").innerHTML = "¡Correcto! <br><br> Este EEG muestra ondas agudas del vertex y husos del sueño, pertenece a la fase II del sueño y no se puede encontrar un ritmo posterior dominante aquí.";
+		document.getElementById("answerQ8").innerHTML = "¡Correcto! <br><br> Este EEG muestra ondas del vertex y husos del sueño, pertenece a la fase II del sueño y no se puede encontrar un ritmo posterior dominante aquí.";
 		document.getElementById("after_submitQ8").style.background = "lightgreen";
 		document.getElementById("afterQ8_picture").innerHTML = "El ritmo posterior dominante aparece en un paciente en despierto con los ojos cerrados o que no está fijando la vista. No busques un ritmo posterior dominante durante el sueño, en  un paciente en coma, o en un paciente despierto pero on relajado. <br><br> ¡Muy bien!";
 

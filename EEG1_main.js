@@ -11,19 +11,19 @@ function checkQ1() {
 
 	if (document.question1.question.value == "NREM1") {
 		document.getElementById("after_submitQ1").style.visibility = "visible";
-		document.getElementById("answerQ1").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ1").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas del vertex.";
 		document.getElementById("after_submitQ1").style.background = "red";
 		document.getElementById("answerQ1_picture").src = "EEG1_img/vertexwaves1.png";
-		document.getElementById("afterQ1_picture").innerHTML = "El EEG muestra ondas agudas del vertex señaladas con flechas rojas. ¿Ves esos elementos en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
+		document.getElementById("afterQ1_picture").innerHTML = "El EEG muestra ondas del vertex señaladas con flechas rojas. ¿Ves esos elementos en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
 
 }
 
 	if (document.question1.question.value == "NREM2") {
 		document.getElementById("after_submitQ1").style.visibility = "visible";
-		document.getElementById("answerQ1").innerHTML = "No es correcto. <br><br> Los elementos más característicos de la fase II son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ1").innerHTML = "No es correcto. <br><br> Los elementos más característicos de la fase II son las ondas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ1").style.background = "red";
 		document.getElementById("answerQ1_picture").src = "EEG1_img/vertexwaves1.png";
-		document.getElementById("afterQ1_picture").innerHTML = "El EEG muestra ondas agudas del vertex y husos del sueño señaladas con flechas rojas. ¿Ves esos elementos en el EEG de la pregunta?  <br><br> ¡Inténtalo de nuevo!";
+		document.getElementById("afterQ1_picture").innerHTML = "El EEG muestra ondas del vertex y husos del sueño señaladas con flechas rojas. ¿Ves esos elementos en el EEG de la pregunta?  <br><br> ¡Inténtalo de nuevo!";
 
 }
 
@@ -95,16 +95,16 @@ function checkQ3() {
 
 	if (document.question3.question.value == "NREM1") {
 		document.getElementById("after_submitQ3").style.visibility = "visible";
-		document.getElementById("answerQ3").innerHTML = "Correcto. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ3").innerHTML = "Correcto. <br><br> Los elementos más característicos del adormecimiento son las ondas del vertex.";
 		document.getElementById("after_submitQ3").style.background = "lightgreen";
 		document.getElementById("answerQ3_picture").src = "EEG1_img/Q3.2.png";
-		document.getElementById("afterQ3_picture").innerHTML = "El EEG muestra una onda aguda del vertex señalada con flechas rojas. Se puede intuir un ritmo posterior dominante en el rectángulo rojo. Otra de las características del adormecimiento es la progresiva desaparición del ritmo posterior dominante y aparición de ondas agudas del vertex. <br><br> ¡Muy bien!";
+		document.getElementById("afterQ3_picture").innerHTML = "El EEG muestra una onda aguda del vertex señalada con flechas rojas. Se puede intuir un ritmo posterior dominante en el rectángulo rojo. Otra de las características del adormecimiento es la progresiva desaparición del ritmo posterior dominante y aparición de ondas del vertex. <br><br> ¡Muy bien!";
 
 }
 
 	if (document.question3.question.value == "NREM2") {
 		document.getElementById("after_submitQ3").style.visibility = "visible";
-		document.getElementById("answerQ3").innerHTML = "No, lo siento. <br><br> Los elementos más característicos de la fase II del sueño son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ3").innerHTML = "No, lo siento. <br><br> Los elementos más característicos de la fase II del sueño son las ondas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ3").style.background = "red";
 		document.getElementById("answerQ3_picture").src = "EEG1_img/spindles1.png";
 		document.getElementById("afterQ3_picture").innerHTML = "El EEG muestra husos del sueño señalados con flechas rojas. ¿Ves esos husos del sueño en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
@@ -144,7 +144,7 @@ function checkQ4() {
 		document.getElementById("answerQ4").innerHTML = "Correcto. <br><br> Los elementos más característicos de la fase II del sueño son los husos del sueño.";
 		document.getElementById("after_submitQ4").style.background = "lightgreen";
 		document.getElementById("answerQ4_picture").src = "EEG1_img/Q4.2.png";
-		document.getElementById("afterQ4_picture").innerHTML = "Los husos del sueño se señalan dentro de los rectángulos. Las flechas señalan a las ondas agudas del vertex, que también se ven en la fase II del sueño. Este EEG es típico de fase II del sueño. <br><br> ¡Muy bien!";
+		document.getElementById("afterQ4_picture").innerHTML = "Los husos del sueño se señalan dentro de los rectángulos. Las flechas señalan a las ondas del vertex, que también se ven en la fase II del sueño. Este EEG es típico de fase II del sueño. <br><br> ¡Muy bien!";
 
 	} else {
 		document.getElementById("after_submitQ4").style.visibility = "visible";
@@ -178,7 +178,7 @@ function checkQ5() {
 
 	if (document.question5.question.value == "NREM1") {
 		document.getElementById("after_submitQ5").style.visibility = "visible";
-		document.getElementById("answerQ5").innerHTML = "Correcto. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ5").innerHTML = "Correcto. <br><br> Los elementos más característicos del adormecimiento son las ondas del vertex.";
 		document.getElementById("after_submitQ5").style.background = "lightgreen";
 		document.getElementById("answerQ5_picture").src = "EEG1_img/Q5.2.png";
 		document.getElementById("afterQ5_picture").innerHTML = "El EEG muestra una onda aguda del vertex con una flecha roja. Los rectángulos también muestran otro elemento del adormecimiento: los ojos se mueven lentamente de un lado a otro causando que los canales frontales aparezcan más anchos (cuando la córnea se acerca al electrodo en ese lado) o estrechos (cuando la retina se acerca al electrodo en ese lado). <br><br> ¡Muy bien!";
@@ -187,7 +187,7 @@ function checkQ5() {
 
 	if (document.question5.question.value == "NREM2") {
 		document.getElementById("after_submitQ5").style.visibility = "visible";
-		document.getElementById("answerQ5").innerHTML = "No. <br><br> Los elementos más característicos de la fase II son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ5").innerHTML = "No. <br><br> Los elementos más característicos de la fase II son las ondas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ5").style.background = "red";
 		document.getElementById("answerQ5_picture").src = "EEG1_img/spindles1.png";
 		document.getElementById("afterQ5_picture").innerHTML = "El EEG muestra husos del sueño marcadas por flechas rojas. ¿Los ves en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
@@ -233,16 +233,16 @@ function checkQ6() {
 
 	if (document.question6.question.value == "NREM1") {
 		document.getElementById("after_submitQ6").style.visibility = "visible";
-		document.getElementById("answerQ6").innerHTML = "¡No es correcto! <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ6").innerHTML = "¡No es correcto! <br><br> Los elementos más característicos del adormecimiento son las ondas del vertex.";
 		document.getElementById("after_submitQ6").style.background = "red";
 		document.getElementById("answerQ6_picture").src = "EEG1_img/drowsiness1.png";
-		document.getElementById("afterQ6_picture").innerHTML = "En el adormecimiento, las ondas agudas del vertex están presentes, pero los husos del sueño no. <br><br> ¡Inténtalo de nuevo!";
+		document.getElementById("afterQ6_picture").innerHTML = "En el adormecimiento, las ondas del vertex están presentes, pero los husos del sueño no. <br><br> ¡Inténtalo de nuevo!";
 
 }
 
 	if (document.question6.question.value == "NREM2") {
 		document.getElementById("after_submitQ6").style.visibility = "visible";
-		document.getElementById("answerQ6").innerHTML = "No. <br><br> Los elementos más característicos de la fase II del sueño son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ6").innerHTML = "No. <br><br> Los elementos más característicos de la fase II del sueño son las ondas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ6").style.background = "red";
 		document.getElementById("answerQ6_picture").src = "EEG1_img/spindles1.png";
 		document.getElementById("afterQ6_picture").innerHTML = "El EEG muestra husos del sueño señalados con flechas rojas. ¿Ves esos husos del sueño en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
@@ -316,16 +316,16 @@ function checkQ8() {
 
 	if (document.question8.question.value == "NREM1") {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
-		document.getElementById("answerQ8").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ8").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas del vertex.";
 		document.getElementById("after_submitQ8").style.background = "red";
 		document.getElementById("answerQ8_picture").src = "EEG1_img/drowsiness1.png";
-		document.getElementById("afterQ8_picture").innerHTML = "En el adormecimiento las ondas agudas del vertex están presentes, pero los husos del sueño no. <br><br> ¡Inténtalo de nuevo!";
+		document.getElementById("afterQ8_picture").innerHTML = "En el adormecimiento las ondas del vertex están presentes, pero los husos del sueño no. <br><br> ¡Inténtalo de nuevo!";
 
 }
 
 	if (document.question8.question.value == "NREM2") {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
-		document.getElementById("answerQ8").innerHTML = "Incorrecto. <br><br> Los elementos más característicos de la fase II del sueño son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ8").innerHTML = "Incorrecto. <br><br> Los elementos más característicos de la fase II del sueño son las ondas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ8").style.background = "red";
 		document.getElementById("answerQ8_picture").src = "EEG1_img/spindles1.png";
 		document.getElementById("afterQ8_picture").innerHTML = "El EEG muestra husos del sueño señalados con flechas rojas. ¿Ves esos husos del sueño en el EEG de la pregunta? <br><br> ¡Inténtalo de nuevo!";
@@ -371,19 +371,19 @@ function checkQ9() {
 
 	if (document.question9.question.value == "NREM1") {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
-		document.getElementById("answerQ9").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas agudas del vertex.";
+		document.getElementById("answerQ9").innerHTML = "No. <br><br> Los elementos más característicos del adormecimiento son las ondas del vertex.";
 		document.getElementById("after_submitQ9").style.background = "red";
 		document.getElementById("answerQ9_picture").src = "EEG1_img/drowsiness1.png";
-		document.getElementById("afterQ9_picture").innerHTML = "Durante el adormecimiento, las ondas agudas del vertex están presentes pero los husos del sueño no. <br><br> ¡Inténtalo de nuevo!";
+		document.getElementById("afterQ9_picture").innerHTML = "Durante el adormecimiento, las ondas del vertex están presentes pero los husos del sueño no. <br><br> ¡Inténtalo de nuevo!";
 
 }
 
 	if (document.question9.question.value == "NREM2") {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
-		document.getElementById("answerQ9").innerHTML = "Correcto. <br><br> Los elementos más característicos de la fase II del sueño son las ondas agudas del vertex y los husos del sueño.";
+		document.getElementById("answerQ9").innerHTML = "Correcto. <br><br> Los elementos más característicos de la fase II del sueño son las ondas del vertex y los husos del sueño.";
 		document.getElementById("after_submitQ9").style.background = "lightgreen";
 		document.getElementById("answerQ9_picture").src = "EEG1_img/spindles1.png";
-		document.getElementById("afterQ9_picture").innerHTML = "El EEG muestra husos del sueño señalados con flechas rojas. También hay ondas agudas del vertex. <br><br> ¡Muy bien!";
+		document.getElementById("afterQ9_picture").innerHTML = "El EEG muestra husos del sueño señalados con flechas rojas. También hay ondas del vertex. <br><br> ¡Muy bien!";
 
 }
 

@@ -9,7 +9,7 @@ function checkQ1() {
 		document.getElementById("after_submitQ1").style.background = "lightgreen";
 		document.getElementById("answerQ1_picture").src = "EEG3_img/Q1.2.png";
 		document.getElementById("answerQ1_picture2").src = "EEG3_img/Q1.3.png";
-		document.getElementById("afterQ1_picture").innerHTML = "Los movimientos oculares rápidos son el rasgo característico del sueño con movimientos oculares rápidos. <br><br>Las ondas agudas del vertex aparecen típicamente en la línea media y las regiones parasagitales y son aproximadamente simétricas entre los hemisferios derecho e izquierdo. <br><br>Las ondas lentas de alta amplitud y difusas son las características definitorias de la fase III. La actividad epileptiforme tiende a potenciarse en la somnolencia (fase I) y fase II del sueño.<br><br>¡Muy bien!";
+		document.getElementById("afterQ1_picture").innerHTML = "Los movimientos oculares rápidos son el rasgo característico del sueño con movimientos oculares rápidos. <br><br>Las ondas del vertex aparecen típicamente en la línea media y las regiones parasagitales y son aproximadamente simétricas entre los hemisferios derecho e izquierdo. <br><br>Las ondas lentas de alta amplitud y difusas son las características definitorias de la fase III. La actividad epileptiforme tiende a potenciarse en la somnolencia (fase I) y fase II del sueño.<br><br>¡Muy bien!";
 
 	} else {
 		document.getElementById("after_submitQ1").style.visibility = "visible";

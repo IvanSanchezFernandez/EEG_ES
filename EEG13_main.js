@@ -175,7 +175,7 @@ function checkQ7() {
 		document.getElementById("answerQ7_picture").src = "EEG13_img/Q7.2.png";
 		document.getElementById("answerQ7_picture2").src = "EEG13_img/Q7.3.png";
 		document.getElementById("answerQ7_picture3").src = "EEG13_img/Q7.4.png";
-		document.getElementById("afterQ7_picture").innerHTML = "<br><br>No hay un campo eléctrico del complejo punta-onda. Cuando tengas dudas, mira al mismo segmento en un montaje diferente. Aquí, si miras al mismo segmento en un montaje con referencia a las orejas, el elemento sospechoso de ser un complejo punta-onda desaparece.<br><br>No hay ondas agudas del vertex o husos del sueño en este segmento del EEG.<br><br>¡Muy bien!";
+		document.getElementById("afterQ7_picture").innerHTML = "<br><br>No hay un campo eléctrico del complejo punta-onda. Cuando tengas dudas, mira al mismo segmento en un montaje diferente. Aquí, si miras al mismo segmento en un montaje con referencia a las orejas, el elemento sospechoso de ser un complejo punta-onda desaparece.<br><br>No hay ondas del vertex o husos del sueño en este segmento del EEG.<br><br>¡Muy bien!";
 
 	} else {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
