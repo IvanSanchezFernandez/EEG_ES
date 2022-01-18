@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+
+<head>
+
+
+<title>EEG15 Localización</title>
+<link href = "EEG15_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG15_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG15: Localización</h1>
+<p>¡Felicidades! Tras haber estudiado los temas anteriores, ya no eres un principiante. Tienes el conocimiento suficiente para entender un aspecto crucial de leer EEG: localización. El primer paso es entender lo que estamos viendo en el EEG.</p>
+
+
+<br>
+<br>
+
+
+
+
+<form id="question1" name="question1">
+<p><b>P1. ¿Cuál de los siguientes representa mejor el origen de las deflecciones en el EEG?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Voltaje en el punto bajo el electrodo<br>
+<input type="radio" id="q1" name="question" value="b"> Cambios en la intensidad de la corriente en el punto bajo el electrodo<br>
+<input type="radio" id="q1" name="question" value="c"> Cambios en voltaje entre dos puntos<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2>Montajes</h2>
+<p>Para entender localización, primero necesitas un buen entendimiento de los montajes en el EEG.</p>
+
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection1" src="EEG15_img/deflection1.png" width=1200px heigth=1000px>
+	<figcaption>Aquí tienes un segmento de EEG. Veamos lo que estamos viendo.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+<p>El EEG mide voltaje. En particular, el EEG mide la diferencia de voltaje entre dos electrodos.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection2" src="EEG15_img/deflection2.png" width=1200px heigth=1000px>
+	<figcaption>Los montajes bipolares (como este montaje bipolar anterior-posterior) comparan un electrodo con el siguiente en la cadena. Por ejemplo, Fp1 se compara con F7 para medir el voltaje Fp1-F7; F7 se compara con T7 para calcular el voltaje F7-T7, y así sucesivamente.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection3" src="EEG15_img/deflection3.png" width=1200px heigth=1000px>
+	<figcaption>Esto significa que el canal Fp1-F7 es simplemente la diferencia de voltaje Fp1 menos F7; el canal F7-T7 es simplemente la diferencia de voltaje F7 menos T7 y así sucesivamente.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection4" src="EEG15_img/deflection4.png" width=1200px heigth=1000px>
+	<figcaption>Haciendo un inciso, en un montaje bipolar anterior-posterior, cada electrodo se compara con el electrodo de detrás (excepto, O1, Pz, y O2, que son electrodos de final de cadena y no tienen ningún electrodo tras ellos). Por lo tanto, este montaje se llama...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection5" src="EEG15_img/deflection5.png" width=1200px heigth=1000px>
+	<figcaption>...montaje en doble banana. Sí, los epileptólogos tienen mucha imaginación (bueno, ... raramente, para ser justos).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection6" src="EEG15_img/deflection6.png" width=1200px heigth=1000px>
+	<figcaption>Volviendo a lo que estamos leyendo cuando leemos EEG, tomemos el ejemplo de la deflección en el rectángulo rojo. Es una deflección en Fp1-F7 y esto significa que, en este momento, Fp1 tiene un voltaje más negativo que F7.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection7" src="EEG15_img/deflection7.png" width=1200px heigth=1000px>
+	<figcaption>Si asumimos que la diferencia de voltaje entre Fp1 y F7 es -70 microvoltios (Fp1 es 70 microvoltios más negativo que F7 en ese momento), entonces la deflección de la línea de base es 70 microvoltios de altura y la deflección es hacia arriba (porque la diferencia es negativa).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+
+<p>¡Espera!...¿Por qué las diferencias negativas van hacia arriba? Es simplemente porque las primeras compañías que fabricaban máquinas electrofisiológicas decidieron que las diferencias negativas se representarían como deflecciones hacia arriba (y diferencias positivas como deflecciones hacia abajo). No hay una razón particular para esto y no es particularmente intuitivo, pero es demasiado tarde para cambiarlo (y, también, hacerlo de la manera opuesta sería igual de arbitrario de lo que es ahora). Los primeros fabricantes de máquinas electrofisiológicas decidieron arbitrariamente esta convención.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection8" src="EEG15_img/deflection8.png" width=1200px heigth=1000px>
+	<figcaption>Esta deflección en el rectángulo rojo va hacia abajo, lo que significa que en el momento capturado en el rectángulo rojo, P7 es menos negativo (o más positivo) que O1. O O1 es más negativo que P7 (si eso es más intuitivo). Recuerda que el voltaje es siempre una diferencia entre puntos, no un valor absoluto en ningún punto.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection9" src="EEG15_img/deflection9.png" width=1200px heigth=1000px>
+	<figcaption>Si asumimos que la diferencia de voltaje entre P7 y O1 es +80 microvoltios (P7 es 80 microvoltios más positivo que O1 en ese momento), entonces la deflección comparado con la base es de 80 microvoltios de altura y la deflección va hacia abajo.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Los montajes bipolares no tienen que ser en una dirección anterior-posterior. Por ejemplo, los montajes transversos comparan un electrodo con el electrodo inmediatamente lateral.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="transverse1" src="EEG15_img/transverse1.png" width=1200px heigth=1000px>
+	<figcaption>En este montaje bipolar transverso, los electrodos se comparan con los electrodos a su derecha (excepto por los electrodos que están en el extremo derecho, que son los electrodos de final de cadena y no tienen ningún electrodo a su derecha). Por ejemplo, F7 se compara con Fp1, Fp1 se compara con Fp2 y así sucesivamente.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Los montajes diferentes se complementan unos a otros porque los electrodos que son final de cadena en un montaje bipolar típicamente no son final de cadena en un montaje bipolar distinto. Por ejemplo, los montajes bipolares transversos son particularmente útiles para buscar reversión de fase en electrodos que son final de cadena en un montaje bipolar anterior-posterior. Los montajes bipolares transversos son típicamente usados durante el sueño porque muestran bien la simetría de las ondas del vertex, los husos del sueño, y otros elementos del sueño.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="transverse2" src="EEG15_img/transverse2.png" width=1200px heigth=1000px>
+	<figcaption>En este montaje bipolar anterior-posterior hay un complejo punta-onda que parece bifrontal, pero de amplitud más alta en la región frontal derecha que en la región frontal izquierda.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="transverse3" src="EEG15_img/transverse3.png" width=1200px heigth=1000px>
+	<figcaption>La misma descarga vista en un montaje bipolar tranverso muestra que la reversión de fase ocurre en Fp2.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Otro montaje bipolar es el montaje circunferencial, en el que los electrodos se comparan con el siguiente electrodo formando un círculo. El montaje circunferencial bipolar, como otros montajes bipolares, permite una perspectiva diferente comparando electrodos.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="circumferential1" src="EEG15_img/circumferential1.png" width=1200px heigth=1000px>
+	<figcaption>Las comparaciones de Fp1 con F7, F7 con T7, etc. forman un círculo.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="circumferential2" src="EEG15_img/circumferential2.png" width=1200px heigth=1000px>
+	<figcaption>Montaje circunferencial como se muestra en la figura anterior.</figcaption></center>
+</figure>
+
+
+
+<br>
+<br>
+
+
+<p><b>¿Y qué es esa cosa referencial?</b> Un montaje referencial se basa en la idea de usar algún electrodo (o grupo de electrodos) que es (o son) "eléctricamente inactivo(s)": no debe haber deflecciones mayores en el (los) electrodo(s) referenciales. Una referencia comunmente usada es Cz porque está en la línea media lejos de los músculos de la cabeza y donde las descargas epileptiformes o las crisis epilépticas son relativamente raras.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="referentialCz1" src="EEG15_img/referentialCz1.png" width=1200px heigth=1000px>
+	<figcaption>En un montaje referencial, todos los electrodos se comparan con el (los) electrodo(s) de referencia, que, en este caso, es Cz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="referentialCz2" src="EEG15_img/referentialCz2.png" width=1200px heigth=1000px>
+	<figcaption>Ejemplo de montaje con referencia en Cz, en el que todos los electrodos se comparan con Cz. Es importante entender que, si hay descargas epileptiformes o convulsiones en el área cerca de Cz, entonces Cz no sería una buena referencia en ese caso. La referencia debe ser un electrodo (o grupo de electrodos) que no es particularmente activo. La mejor referencia varía de paciente a paciente e, incluso en el mismo paciente de una situación a otra.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question2" name="question2">
+<p><b>P2. Selecciona las referencias que sean razonables:</b></p>
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> Nariz<br>
+<input type="checkbox" id="q2b" name="question" value="b"> Media de ambas orejas<br>
+<input type="checkbox" id="q2c" name="question" value="c"> Electrodo en la parte de atrás del cuello<br>
+<input type="checkbox" id="q2d" name="question" value="d"> Media de todos los electrodos en la cabeza<br>
+<input type="checkbox" id="q2e" name="question" value="e"> Electrodo en la parte izquierda del torax, cerca del corazón<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. ¿Por qué el EEG muestra la actividad eléctrica generada en el cerebro? Hay actividad eléctrica de mucho más alto voltaje (por ejemplo, actividad eléctrica generada en el corazón o actividad eléctrica generada por máquinas alrededor del paciente) deberían contaminar y oscurecer la diminuta actividad eléctrica que viene del cerebro, ¿verdad?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> La actividad eléctrica que viene del cerebro es de hecho de mayor voltaje que la actividad eléctrica que viene del corazón o de las máquinas alrededor del paciente<br>
+<input type="radio" id="q1" name="question" value="b"> Las corrientes eléctricas generadas en el cerebro, a pesar de que son diminutas, generan una diferencia de voltaje entre diferentes electrodos en el cuero cabelludo. En contraste, las corrientes eléctricas generadas en el corazón o en las máquinas alrededor del paciente, a pesar de que son de más alto voltaje, llegan a los electrodos en el cuero cabelludo con un voltaje similar, y la diferencia de voltaje entre los electrodos es cero (se cancelan unos a otros)<br>
+<input type="radio" id="q1" name="question" value="c"> La actividad eléctrica generada en el cerebro es de frecuencias completamente distintas que la actividad eléctrica que viene del corazón, de máquinas alrededor del paciente, o de cualquier otro ruido<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2>¿De dónde viene la electricidad?</h2>
+
+<p>Hemos visto más arriba que el EEG simplemente mide una diferencia de voltaje. Pero, ¿de dónde viene esta electricidad?</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP1" src="EEG15_img/EPSP1.png" width=1200px heigth=1000px>
+	<figcaption>Imaginemos una neurona cortical que recibe varias terminaciones nerviosas de otras neuronas hacia sus dendritas y soma.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP2" src="EEG15_img/EPSP2.png" width=1200px heigth=1000px>
+	<figcaption>Cuando las neuronas presinápticas liberan sus neurotransmisores en las sinapses, estas se unen a los receptores postsinápticos. Esto causa la apertura de los canales iónicos, lo que permite que los iones positivos (típicamente sodio) entren en la neurona: esto es un potencial excitatorio postsináptico.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP3" src="EEG15_img/EPSP3.png" width=1200px heigth=1000px>
+	<figcaption>El flujo de iones positivos (típicamente sodio) en la neurona deja el espacio extracelular alrededor del soma y las dendritas relativamente negativos. De hecho, durante los potenciales excitatorios postsinápticos, el espacio extracelular alrededor del soma y las dendritas es relativamente negativo, no sólo con respecto al interior de la neurona, pero también con respecto al espacio extracelular alrededor del axón.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP4" src="EEG15_img/EPSP4.png" width=1200px heigth=1000px>
+	<figcaption>Una neurona puede ser conceptualizada (en una forma muy simplista) como una estructura vertical perpendicular a la superficie del cerebro. Cuando hay un potencial postsináptico excitatorio en el soma y las dendritas, la neurona puede ser vista como un dipolo eléctrico muy pequeño con un polo negativo cercano a la superficie del cerebro y un polo positivo cercano a la profundidad del cerebro.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP5" src="EEG15_img/EPSP5.png" width=1200px heigth=1000px>
+	<figcaption>Cuando estos dipolos eléctricos se suman (varios miles de neuronas en la misma área del cerebro tienen un potencial postsináptico excitatorio al mismo tiempo)...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP6" src="EEG15_img/EPSP6.png" width=1200px heigth=1000px>
+	<figcaption>...son equivalentes a un dipolo eléctrico grande que puede causar cambios eléctricos macroscópicos en la superficie del cerebro (diminutos, pero detectables: del orden de varios microvoltios).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP6" src="EEG15_img/EPSP6.png" width=1200px heigth=1000px>
+	<figcaption>Si asumes que el cerebro es una esfera perfecta y todas las neuronas en la corteza cerebral solamente se orientan perpendicularmente a la superficie del cerebro, entonces si encuentras una deflección negativa en el cuero cabelludo, puedes asumir que el generador de esa negatividad en la superficie es un dipolo como el mostrado en la figura.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP7" src="EEG15_img/EPSP7.png" width=1200px heigth=1000px>
+	<figcaption>Hay un gradiente en el campo eléctrico con menos y menos negatividad en el cuero cabelludo cuanto más te alejes del dipolo. Por lo tanto, el dipolo eléctrico que genera la deflección negativa se localiza justo debajo del punto de máxima negatividad en el cuero cabelludo. !Maravilloso! Esto es tan intuitivo: la máxima negatividad en el EEG en la superficie del cuero cabelludo significa que el generador de esa negatividad está justo debajo de la máxima negatividad.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>P4. ¿Son los cerebros humanos esferas perfectas en los que todas las neuronas corticales son perpendiculares a la superficie del cerebro?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Sí<br>
+<input type="radio" id="q1" name="question" value="b"> No<br>
+<input type="radio" id="q1" name="question" value="c"> En realidad, los cerebros humanos son esferas perfectas y todas las neuronas corticales son perpendiculares a la superficie del cerebro, pero hay una conspiración y el gobierno intenta escondernos la verdad creando y diseminando libros de anatomía con cerebros falsos<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2>Localización</h2>
+
+<p>Ahora ya sabemos lo que vemos en el EEG: <b>diferencias de voltaje entre electrodos en el cuero cabelludo</b>, cómo lo medimos: <b>usando distintos montajes en el EEG</b>, y lo que significa: <b>un dipolo eléctrico que, en muchos casos, es perpendicular a la superficie del cuero cabelludo y (aproximadamente) localizado bajo el punto de máxima negatividad</b>. Sabiendo todo eso podemos entender cómo localizar defleciones en el EEG.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization1" src="EEG15_img/localization1.png" width=1200px heigth=1000px>
+	<figcaption>Si miras al canal P4-O2, hay una punta hacia arriba. Como ya sabes, esto significa que la diferencia del voltaje P4 menos O2 es negativa (las defleciones negativas van hacia arriba). Esto significa que, en el momento de la punta, P4 tiene un voltaje más negativo que O2. Si miras al canal C4-P4, hay una punta hacia abajo. Esto significa que la diferencia C4 menos P4 es positiva (o dicho de otra manera, que C4 es más positivo que P4 o, de forma equivalente, que P4 es más negativo que C4).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization2" src="EEG15_img/localization2.png" width=1200px heigth=1000px>
+	<figcaption>Basándonos en esa información, puedes pensar que la punta es un campo eléctrico que, en la dirección anterior-posterior, tiene máxima negatividad en P4 y que la negatividad se hace progresivamente menos pronunciada hacia C4 y hacia O2.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization1" src="EEG15_img/localization1.png" width=1200px heigth=1000px>
+	<figcaption>Si miras al canal P8-O2, hay una punta hacia arriba. Como ya sabes, esto significa que la diferencia de voltaje P8 menos O2 es negativa (las defleciones negativas van hacia arriba). Esto significa que, en el momento de la punta, P8 tiene un voltaje más negativo que O2. Si miras al canal T8-P8, hay una punta hacia abajo. Esto significa que la diferencia T8 menos P8 es positiva (o dicho de otra manera, que T8 es más positivo que P8 o, de forma equivalente, que P8 es más negativo que T8). Siguiendo la misma lógica, T8 es más negativa que F8. En un montaje bipolar, el punto donde las puntas se señalan la una a la otra se llama "reversión de fase" y es el punto de máxima negatividad (T8 es la reversión de fase en la cadena F8-T8-P8).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization3" src="EEG15_img/localization3.png" width=1200px heigth=1000px>
+	<figcaption>Esta información adicional nos permite localizar mejor. Hay un campo eléctrico que, en la dirección anterior-posterior, tiene una negatividad máxima en P4 y P8 y esa negatividad se hace progresivamente menos pronunciada hacia C4 y también hacia O2 y también hacia F8 y O2. Algo como en el campo eléctrico en la figura de arriba.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization4" src="EEG15_img/localization4.png" width=1200px heigth=1000px>
+	<figcaption>Una vez que has localizado la punta en la dirección anterior-posterior con el montaje anterior-posterior, puedes querer localizar en la dirección transversa con el montaje bipolar transverso. Este es el mismo segmento en un montaje bipolar transverso. Si miras al canal P4-P8, hay una punta hacia arriba. Esto significa que la diferencia de voltaje P4 menos P8 es negativa (las defleciones negativas van hacia arriba). Esto significa que, en el momento de la punta, P4 tiene un voltaje más negativo que P8. Si miras al canal Pz-P4, hay una punta hacia abajo. Esto significa que la diferencia Pz menos P4 es positiva (o, dicho de otra manera, que Pz es más positivo que P4 o, de forma equivalente, que P4 es más negativo que Pz).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization5" src="EEG15_img/localization5.png" width=1200px heigth=1000px>
+	<figcaption>Esta información adicional nos permite mejor en la dirección transversal. Hay un campo eléctrico que, en la dirección transversa, tiene máxima negatividad en P4 y esa negatividad se hace progresivamente menos pronunciada hacia Pz y hacia P8.</figcaption></center>
+</figure>
+
+
+
+<figure>
+	<center><img id="localization4" src="EEG15_img/localization4.png" width=1200px heigth=1000px>
+	<figcaption>Si miras al canal T8-A2, hay una punta hacia arriba. Como ya sabes, esto significa que la diferencia de voltaje T8 menos A2 es negativa (las defleciones negativas van hacia arriba). Esto significa que, en el momento de la punta, T8 tiene un voltaje más negativo que A2. Si miras al canal C4-T8, hya una punta hacia abajo. Esto significa que la diferencia C4 menos T8 es positiva (o, dicho de otra manera, que C4 es más positivo que T8 o, de forma equivalente, que T8 es más negativo que C4).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization6" src="EEG15_img/localization6.png" width=1200px heigth=1000px>
+	<figcaption>Esta información adicional nos permite localizar mejor en la dirección transversa. Hay un campo eléctrico que, en la dirección transversa, tiene máxima negatividad en P4 y T8 y esa negatividad se hace progresivamente menos pronunciada hacia Pz y hacia P8 y también hacia C4 y hacia A2. Algo como en la figura de arriba.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization7" src="EEG15_img/localization7.png" width=1200px heigth=1000px>
+	<figcaption>En un montaje referencial (como el montaje referencial con una referencia a Cz de arriba), el punto de máxima negatividad en el EEG del cuero cabelludo se marca por las defleciones con la mayor amplitud (voltaje) en el EEG. Puedes ver que el punto de máximo voltaje durante la punta está en T8, P8, y (en menor grado), P4. Esto es consistente con el campo eléctrico esquemático que habiamos estimado en la figura.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization8" src="EEG15_img/localization8.png" width=1200px heigth=1000px>
+	<figcaption>Si asumes cerebros perfectamente esféricos con todas las neuronas perpendiculares a la superficie cerebral puedes concluir que el generador de esa punta es un dipolo localizado en algún lugar entre T8, P8, y P4.</figcaption></center>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p>¿Y las crisis epilépticas? Deberías localizar las crisis epilépticas aproximadamente de la misma manera. Mira las defleciones y estima dónde está la máxima negatividad en el EEG en el cuero cabelludo. Las crisis epilépticas son una sucesión de defleciones que evolucionan en el tiempo, así que la localización varía en el tiempo. La localización de mayor interés en la mayoría de las crisis epilépticas es la localización del origen de las crisis epilépticas.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization9" src="EEG15_img/localization9.png" width=1200px heigth=1000px>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization10" src="EEG15_img/localization10.png" width=1200px heigth=1000px>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization11" src="EEG15_img/localization11.png" width=1200px heigth=1000px>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization12" src="EEG15_img/localization12.png" width=1200px heigth=1000px>
+	<figcaption>Siguiendo las defleciones en la crisis epiléptica puedes pensar en un dipolo negativo con máxima negatividad en F7/T7 que luego se extiende para afectar F3 e, incluso, Fz. En esta crisis epiléptica la máxima negatividad siempre está en la región F7/T7 pero en otras crisis epilépticas la región de máxima negatividad puede migrar en el tiempo.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization13" src="EEG15_img/localization13.png" width=1200px heigth=1000px>
+	<figcaption>La crisis epiléptica aparecería como se representa en la figura con máxima negatividad en algún punto entre F7, T7, y F3 con algo de evolución y migración durante la crisis epiléptica.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization14" src="EEG15_img/localization14.png" width=1200px heigth=1000px>
+	<figcaption>Asumiendo un cerebro perfectamente esférico, el dipolo aparecería como en la figura de arriba con algo de evolución y migración durante la crisis epiléptica.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>¿Y las crisis epilépticas generalizadas?</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization15" src="EEG15_img/localization15.png" width=1200px heigth=1000px>
+	<figcaption>Las crisis epilépticas generalizadas tienen un voltaje negativo de aproximadamente la misma magnitud en todo el cuero cabelludo porque estas crisis epilépticas se generan en los circuitos córtico-tálamo-corticales. Por lo tanto, típicamente aparecen similares en todos los canales del EEG (típicamente más prominentes en las regiones frontales).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization16" src="EEG15_img/localization16.png" width=1200px heigth=1000px>
+	<figcaption>Asumiendo un cerebro perfectamente esférico, los dipolos aparecerían como en la figura de arriba.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<form id="question5" name="question5">
+<p><b>P5. En relación con el segmento de EEG abajo, ¿dónde localizan los patrones rítmicos que ves?</b></p>
+<figure>
+	<img id="Q5_1" src="EEG15_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> Puede haber una reversión de fase en P7, sugiriendo que la máxima negatividad está allí<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Puede haber una reversión de fase en C3, sugiriendo que la máxima negatividad está allí<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Puede haber una reversión de fase en F8, sugiriendo que la máxima negatividad está allí<br>
+<input type="checkbox" id="q5d" name="question" value="d"> Este campo eléctrico no tiene sentido<br>
+<input type="checkbox" id="q5e" name="question" value="e"> Siento que no soy capaz de localizar esta actividad rítmica<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ5_picture">
+</p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>En este momento ya eres capaz de localizar puntas, crisis epilépticas y otras defleciones en el EEG.</b></p>
+
+<p><b>Cierto. Esto es sólo una localización aproximada basada en el EEG del cuero cabelludo. En realidad, la localización es mucho más complicada (los cerebros no son perfectamente esféricos, las neuronas no son siempre perpendiculares a la superficie del cuero cabelludo) y requiere <a href='https://pubmed.ncbi.nlm.nih.gov/31019487/' target='_blank'>localización del origen (source localization)</a>.<br><br>De todas formas, esta localización aproximada te será extremadamente útil en la mayoría de ocasiones y te hará entender mejor lo que estás viendo en el EEG.<br><br>Una nota final: la localización puede parecer que lleva mucho tiempo. La realidad es que es complicada sólo al principio, pero se hace de forma natural y muy rápida cuanto más practiques. ¡Sigue aprendiendo y localizando!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
