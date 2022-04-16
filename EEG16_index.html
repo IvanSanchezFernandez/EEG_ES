@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG16 ¡Artefactos!</title>
+<link href = "EEG16_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG16_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG16: ¡Artefactos!</h1>
+<p>Ya has visto en las páginas anteriores algunos de los artefactos más comunes. Es extremadamente importante reconocer los artefactos en el EEG para evitar confundirlos con actividad cerebral. Revisemos los artefactos más sistemáticamente.<br><br>Antes de nada: ¿qué es un artefacto? Un artefacto es un patrón electroencefalográfico que no se origina en la actividad cerebral. Puede ser causado por otras partes del cuerpo (por ejemplo, contracción de un músculo esquelético, actividad eléctrica cardiaca, etc.) o por máquinas que estén cerca del cuerpo (por ejemplo, respiradores en la UCI, un teléfono móvil cerca del paciente, etc.).<br><br>La mayoría de los artefactos se pueden reconocer como actividad no proveniente del cerebro por su apariencia no fisiológica (no se parecen al resto de la actividad cerebral), pero su mayor peligro es cuando no son demasiado diferentes de la actividad epileptiforme o, incluso, de las crisis epilépticas, lo que lleva a misclasificar un EEG normal como patológico.</p>
+
+
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>P1. Empecemos con una pregunta fácil. Esta te la sabes. ¿Qué tipo de artefacto muestra el segmento de EEG abajo?</b></p>
+<figure>
+	<img id="Q1_1" src="EEG16_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q1" name="question" value="a"> Artefacto de fisioterapia en el pecho<br>
+<input type="radio" id="q1" name="question" value="b"> Artefacto de electrocardiograma<br>
+<input type="radio" id="q1" name="question" value="c"> Esto es realmente una crisis epiléptica<br>
+<input type="radio" id="q1" name="question" value="d"> Artefacto de masticación<br>
+<input id="buttonQ1" type="button" value="¡Ya está!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>P2. Selecciona todas las respuestas correctas sobre el segmento de EEG mostrado abajo:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG16_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> Hay puntas frecuentes repetitivas en T8<br>
+<input type="checkbox" id="q2b" name="question" value="b"> Hay artefacto muscular en T7<br>
+<input type="checkbox" id="q2c" name="question" value="c"> Las puntas rítmicas en T8 son una crisis epiléptica<br>
+<input type="checkbox" id="q2d" name="question" value="d"> No hay artefactos durante este segmento del EEG<br>
+<input type="checkbox" id="q2e" name="question" value="e"> Hay artefacto de movimiento del electrodo en T8<br>
+<input id="buttonQ2" type="button" value="¡Ya está!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ2_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>P3. ¿Qué son las deflecciones en los canales frontales?</b></p>
+<figure>
+	<img id="Q3_1" src="EEG16_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q1" name="question" value="a"> Esto es una crisis epiléptica bifrontal<br>
+<input type="radio" id="q1" name="question" value="b"> Esto es un artefacto del electrocardiograma<br>
+<input type="radio" id="q1" name="question" value="c"> Esto es un artefacto de movimiento vertical del ojo<br>
+<input type="radio" id="q1" name="question" value="d"> Esto es un artefacto generado en la lengua<br>
+<input type="radio" id="q1" name="question" value="e"> Esto es un artefacto que viene de una máquina en la UCI que está cerca del paciente<br>
+<input id="buttonQ3" type="button" value="¡Ya está!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>P4. ¿Qué es la actividad rítmica en este segmento del EEG?</b></p>
+<figure>
+	<img id="Q4_1" src="EEG16_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q4" name="question" value="a"> Una crisis epiléptica focal<br>
+<input type="radio" id="q4" name="question" value="b"> Artefacto de sudoración<br>
+<input type="radio" id="q4" name="question" value="c"> Una crisis epiléptica generalizada<br>
+<input type="radio" id="q4" name="question" value="d"> Artefacto de movimiento del electrodo<br>
+<input type="radio" id="q4" name="question" value="e"> Ondas agudas<br>
+<input type="radio" id="q4" name="question" value="f"> Artefacto de palmadas en la espalda<br>
+<input id="buttonQ4" type="button" value="¡Ya está!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<form id="question5" name="question5">
+<p><b>P5. Señala todas las respuestas correctas en el segmento de EEG de abajo:</b></p>
+<figure>
+	<img id="Q5_1" src="EEG16_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> Hay una crisis epiléptica en este segmento del EEG<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Hay un prominente artefacto de sudoración<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Las fluctuaciones rápidas en el voltaje sugieren un origen fisiológico en el cerebro<br>
+<input type="checkbox" id="q5d" name="question" value="d"> Posiblemente no se pueda confiar en los hallazgos en este segmento del EEG<br>
+<input type="checkbox" id="q5e" name="question" value="e"> Varios electrodos necesitan ajustarse en este paciente<br>
+<input id="buttonQ5" type="button" value="¡Ya está!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ5_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ5_picture">
+</p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question6" name="question6">
+<p><b>P6. Esta pregunta es fácil. ¿Qué artefactos ves en el segmento de EEG de abajo?:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG16_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> Artefacto de sudoración<br>
+<input type="checkbox" id="q6b" name="question" value="b"> Artefacto glosocinético<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Artefacto muscular<br>
+<input type="checkbox" id="q6d" name="question" value="d"> Artefacto de palmadas en la espalda<br>
+<input type="checkbox" id="q6e" name="question" value="e"> Artefacto de parpadeo<br>
+<input id="buttonQ6" type="button" value="¡Ya está!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<figure>
+<img id="answerQ6_picture">
+</figure>
+<br clear="all" />
+<p id = "afterQ6_picture">
+</p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question7" name="question7">
+<p><b>P7. ¿Qué es el elemento marcado por las flechas rojas?</b></p>
+<figure>
+	<img id="Q7_1" src="EEG16_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q7" name="question" value="a"> Artefacto de parpadeo<br>
+<input type="radio" id="q7" name="question" value="b"> Artefacto glosocinético<br>
+<input type="radio" id="q7" name="question" value="c"> Artefacto de sudoración<br>
+<input type="radio" id="q7" name="question" value="d"> Artefacto de movimiento del electrodo<br>
+<input type="radio" id="q7" name="question" value="e"> Artefacto del recto lateral<br>
+<input type="radio" id="q7" name="question" value="f"> Artefacto de contracción del músculo temporal<br>
+<input id="buttonQ7" type="button" value="¡Ya está!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question8" name="question8">
+<p><b>P8. ¿Cuál es la causa más probable de los hallazgos en el segmento de EEG de abajo?</b></p>
+<figure>
+	<img id="Q8_1" src="EEG16_img/Q8.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q8" name="question" value="a"> Artefacto de parpadeo<br>
+<input type="radio" id="q8" name="question" value="b"> Artefacto cardiobalístico<br>
+<input type="radio" id="q8" name="question" value="c"> Artefacto de rascado<br>
+<input type="radio" id="q8" name="question" value="d"> Artefacto de movimiento del electrodo<br>
+<input type="radio" id="q8" name="question" value="e"> Artefacto del recto lateral<br>
+<input type="radio" id="q8" name="question" value="f"> Artefacto de contracción muscular del músculo temporal<br>
+<input id="buttonQ8" type="button" value="¡Ya está!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<p id = "afterQ8_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question9" name="question9">
+<p><b>P9. Selecciona los artefactos que ves en el segmento de EEG de abajo:</b></p>
+<figure>
+	<img id="Q9_1" src="EEG16_img/Q9.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q9a" name="question" value="a"> Artefacto de parpadeo<br>
+<input type="checkbox" id="q9b" name="question" value="b"> Artefacto cardiobalístico<br>
+<input type="checkbox" id="q9c" name="question" value="c"> Artefacto de rascado<br>
+<input type="checkbox" id="q9d" name="question" value="d"> Artefacto del recto lateral<br>
+<input type="checkbox" id="q9e" name="question" value="e"> Artefacto del electrocardiograma<br>
+<input id="buttonQ9" type="button" value="¡Ya está!" onclick="checkQ9();">
+</form>
+
+<div id="after_submitQ9">
+<p id="answerQ9"></p>
+<br>
+<figure>
+<img id="answerQ9_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ9_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ9_picture">
+</p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question10" name="question10">
+<p><b>P10. ¿Qué artefacto ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="Q10_1" src="EEG16_img/Q10.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q10" name="question" value="a"> Artefacto de rascado<br>
+<input type="radio" id="q10" name="question" value="b"> Artefacto de sudoración<br>
+<input type="radio" id="q10" name="question" value="c"> Artefacto del recto lateral<br>
+<input type="radio" id="q10" name="question" value="d"> Artefacto de movimiento del electrodo<br>
+<input type="radio" id="q10" name="question" value="e"> Artefacto cardiobalístico<br>
+<input type="radio" id="q10" name="question" value="f"> Artefacto de palmadas en la espalda<br>
+<input id="buttonQ10" type="button" value="¡Ya está!" onclick="checkQ10();">
+</form>
+
+<div id="after_submitQ10">
+<p id="answerQ10"></p>
+<br>
+<figure>
+<img id="answerQ10_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ10_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ10_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ10_picture"></p>
+</div>
+<br clear="all" />
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question11" name="question11">
+<p><b>P11. ¿Qué artefacto ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="Q11_1" src="EEG16_img/Q11.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q11" name="question" value="a"> Artefacto del electrocardiograma<br>
+<input type="radio" id="q11" name="question" value="b"> Artefacto de sudoración<br>
+<input type="radio" id="q11" name="question" value="c"> Artefacto del recto lateral<br>
+<input type="radio" id="q11" name="question" value="d"> Artefacto de corriente alterna<br>
+<input type="radio" id="q11" name="question" value="e"> Artefacto cardiobalístico<br>
+<input type="radio" id="q11" name="question" value="f"> Artefacto de palmadas en la espalda<br>
+<input id="buttonQ11" type="button" value="¡Ya está!" onclick="checkQ11();">
+</form>
+
+<div id="after_submitQ11">
+<p id="answerQ11"></p>
+<br>
+<figure>
+<img id="answerQ11_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ11_picture"></p>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ11_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ11_picture2"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Has visto los artefactos más comunes del EEG.</b></p>
+
+<p><b>Probablemente te hayas dado cuenta de que los artefactos tienen en común que "no parecen fisiológicos", aparecen distintos que la actividad que viene del cerebro. Los artefactos más obvios pueden ser reconocidos rápidamente por su patrón característico y su apariencia "no fisiológica". Cuando haya dudas, localiza el origen de los elementos que ves en el EEG. Si la localización no tiene mucho sentido, entonces probablemente es un artefacto. Esta es una de las razones por las que esta página viene justo después de la página sobre localización.<br><br>Sigamos aprendiendo cosas que nos harán mejores lectores del EEG.</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
