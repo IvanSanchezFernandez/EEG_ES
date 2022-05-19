@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QJQTM2X3TP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QJQTM2X3TP');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG17 Variantes normales</title>
+<link href = "EEG17_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG17_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG17: Variantes normales</h1>
+<p>Probablemente la parte más difícil de leer EEGs es reconocer las características normales en el EEG. Esto generalmente se traduce en que las personas con poca experiencia clasifican algunos hallazgos como anormales cuando, en realidad, son normales. Las personas con poca experiencia tienden a misclasificar cualquier elemento que es raro como anormal y esto puede acarrear consecuencias para los pacientes. Las personas con más experiencia leyendo EEG son capaces de reconocer elementos del EEG que "tienen una apariencia rara", pero que son normales. Una parte muy importante de convertirse en un buen intérprete del EEG es ser capaz de reconocer las variantes normales: los hallazgos del EEG que tienen apariencia "anormal", "rara", "inusual", pero que son normales. ¡Vamos a por (algunos) de ellos!</p>
+
+
+<br>
+<br>
+
+
+<h2>Variantes normales en adultos</h2>
+<p>Hay muchos hallazgos con apariencia extraña en el EEG de los adultos, pero que son completamente normales.</p>
+
+
+<br>
+<br>
+
+
+<p>Uno de los rasgos más chocantes de leer EEGs de adultos (al menos, para un neurólogo pediátrico) es el ritmo posterior dominante que, en una gran proporción de adultos, es de muy baja amplitud y es muy intermitente (raramente dura más de unas fracciones de segundos).</p>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="lowvoltagePDR1" src="EEG17_img/lowvoltagePDR1.png" width=1200px heigth=1000px>
+	<figcaption>Aquí hay un segmento del EEG de un adulto. Fíjate en el ritmo posterior dominante. Es pequeño, de baja amplitud, dura muy poco, hay muy poco gradiente anterior-posterior...y así todo, era el mejor ritmo posterior dominante en este EEG de 30 minutos en el que el paciente cerró los ojos y se relajó varias veces.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="lowvoltagePDR2" src="EEG17_img/lowvoltagePDR2.png" width=1200px heigth=1000px>
+	<figcaption>Otro ejemplo de otro paciente adulto...este también fue el mejor ritmo posterior dominante en un EEG de 30 minutos en el que el paciente cerró los ojos y estaba relajado.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+
+<figure>
+	<center><img id="lowvoltagePDR3" src="EEG17_img/lowvoltagePDR3.png" width=1200px heigth=1000px>
+	<figcaption>Compara eso con el ritmo posterior dominante de un adolescente: alta amplitud, bien formado, buen gradiente anterior-posterior.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+<p>Puede ser que sea por el engrosamiento del hueso craneal con la edad. Cuanto más viejo sea el paciente, más probable es que se vea este tipo de ritmo posterior dominante. Parece como que el ritmo posterior dominante se desvanezca con la edad y termine siendo una sombra de lo que fue en los años jóvenes. Eso también le ocurre a algunas personas cuando se hacen mayores. En cualquier caso, es completamente normal, una variante normal.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="questiona1" name="questiona1">
+<p><b>Adultos P1. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QA1_1" src="EEG17_img/AQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qa1" name="question" value="a"> Ritmo de empalizada (wicket spikes)<br>
+<input type="radio" id="qa1" name="question" value="b"> Ritmo mu<br>
+<input type="radio" id="qa1" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qa1" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input type="radio" id="qa1" name="question" value="e"> Punta-ondas fantasma (phantom spike-wave complexes)<br>
+<input id="buttonQA1" type="button" value="¡Ya está!" onclick="checkQA1();">
+</form>
+
+<div id="after_submitQA1">
+<p id="answerQA1"></p>
+<br>
+<figure>
+<img id="answerQA1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQA1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQA1_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQA1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2>Variantes normales en los jóvenes</h2>
+<p>Veamos qué elementos "de apariencia rara" en el EEG son normales en los jóvenes.</p>
+
+
+<br>
+<br>
+
+
+
+<form id="questiony1" name="questiony1">
+<p><b>Jóvenes P1. ¿Que variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QY1_1" src="EEG17_img/YQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy1" name="question" value="a"> Ritmo en empalizada (wicket spikes)<br>
+<input type="radio" id="qy1" name="question" value="b"> Ritmo mu<br>
+<input type="radio" id="qy1" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qy1" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input id="buttonQY1" type="button" value="¡Ya está!" onclick="checkQY1();">
+</form>
+
+<div id="after_submitQY1">
+<p id="answerQY1"></p>
+<br>
+<figure>
+<img id="answerQY1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<p>Ahora es un buen momento para recalcar un par de conceptos cruciales en diferenciar las variantes normales de la actividad epileptiforme:</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm1" src="EEG17_img/doesnotbreaktherhythm1.png" width=1200px heigth=1000px>
+	<figcaption>Si encuentras el elemento marcado pora la flecha roja mientras lees un EEG, puedes pensar "es puntiagudo, tiene un campo eléctrico, y destaca sobre el resto del EEG: ¡tiene que ser una punta!".</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm2" src="EEG17_img/doesnotbreaktherhythm2.png" width=1200px heigth=1000px>
+	<figcaption>Pero si prestas atención a lo que viene después, te darás cuenta que el siguiente elemento es idéntico y aparece muy poco después tras el primer elemento puntiagudo.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm3" src="EEG17_img/doesnotbreaktherhythm3.png" width=1200px heigth=1000px>
+	<figcaption>Y hay otro elemento muy similar justo después. Entonces, puedes pensar, "esto no rompe el ritmo".</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm4" src="EEG17_img/doesnotbreaktherhythm4.png" width=1200px heigth=1000px>
+	<figcaption>Y eso es exactamente correcto porque esos elementos puntiagudos no rompen el ritmo, son parte de los ritmos de base del EEG y, en particular, este ritmo es un ritmo mu. Su frecuencia en este caso es aproximadamente 6 Hz, típicamente demasiado alto para las descargas epileptiformes. Es relativamente fácil reconocer el ritmo mu cuando aparece en ráfagas o en trenes de ondas como en este segmento del EEG...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm5" src="EEG17_img/doesnotbreaktherhythm5.png" width=1200px heigth=1000px>
+	<figcaption>...pero cuando el ritmo mu aparece como un elemento puntiagudo aislado o como sólo unos pocos elementos puntiagudos, es muy fácil confundirlo con una punta (o puntas). En esos casos, mira a otras partes del EEG y, si ves el mismo tipo de elemento apareciendo en ráfagas o trenes de ondas, entonces puedes estar más seguro de que es simplemente un ritmo mu (una variante normal).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Recuerda: si algo no rompe el ritmo lo más probable es que no sea una descarga epileptiforme. También, si un elemento tiene un ritmo de 6 Hz o más also, lo más probable es que sea una variante normal.</p>
+
+
+<br>
+<br>
+
+
+<form id="questiony2" name="questiony2">
+<p><b>Jóvenes P2. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QY2_1" src="EEG17_img/YQ2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy2" name="question" value="a"> Ritmo en empalizada (wicket spikes)<br>
+<input type="radio" id="qy2" name="question" value="b"> Ritmo de brecha (breach rhythm)<br>
+<input type="radio" id="qy2" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qy2" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input type="radio" id="qy2" name="question" value="e"> Punta-ondas fantasma (phantom spike-wave complexes)<br>
+<input type="radio" id="qy2" name="question" value="f"> Ondas lambda<br>
+<input id="buttonQY2" type="button" value="¡Ya está!" onclick="checkQY2();">
+</form>
+
+<div id="after_submitQY2">
+<p id="answerQY2"></p>
+<br>
+<figure>
+<img id="answerQY2_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY2_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY2_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="questiony3" name="questiony3">
+<p><b>Jóvenes P3. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QY3_1" src="EEG17_img/YQ3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy3" name="question" value="a"> Ritmo de empalizada (wicket spikes)<br>
+<input type="radio" id="qy3" name="question" value="b"> Ritmo de brecha (breach rhythm)<br>
+<input type="radio" id="qy3" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qy3" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input type="radio" id="qy3" name="question" value="e"> Ondas lentas posteriores de la juventud<br>
+<input type="radio" id="qy3" name="question" value="f"> Ondas lambda<br>
+<input id="buttonQY3" type="button" value="¡Ya está!" onclick="checkQY3();">
+</form>
+
+<div id="after_submitQY3">
+<p id="answerQY3"></p>
+<br>
+<figure>
+<img id="answerQY3_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY3_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY3_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<form id="questiony4" name="questiony4">
+<p><b>Jóvenes P4. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QY4_1" src="EEG17_img/YQ4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy4" name="question" value="a"> Ritmo de empalizada (wicket spikes)<br>
+<input type="radio" id="qy4" name="question" value="b"> Ritmo de brecha (breach rhythm)<br>
+<input type="radio" id="qy4" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qy4" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input type="radio" id="qy4" name="question" value="e"> Ondas lentas posteriores de la juventud<br>
+<input type="radio" id="qy4" name="question" value="f"> Ondas lambda<br>
+<input id="buttonQY4" type="button" value="¡Ya está!" onclick="checkQY4();">
+</form>
+
+<div id="after_submitQY4">
+<p id="answerQY4"></p>
+<br>
+<figure>
+<img id="answerQY4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="questiony5" name="questiony5">
+<p><b>Jóvenes P5. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QY5_1" src="EEG17_img/YQ5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy5" name="question" value="a"> Ritmo de empalizada (wicket spikes)<br>
+<input type="radio" id="qy5" name="question" value="b"> Ritmo de brecha (breach rhythm)<br>
+<input type="radio" id="qy5" name="question" value="c"> Ritmo posterior dominante puntiagudo<br>
+<input type="radio" id="qy5" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input type="radio" id="qy5" name="question" value="e"> Ondas lentas posteriores de la juventud<br>
+<input type="radio" id="qy5" name="question" value="f"> Ondas lambda<br>
+<input id="buttonQY5" type="button" value="¡Ya está!" onclick="checkQY5();">
+</form>
+
+<div id="after_submitQY5">
+<p id="answerQY5"></p>
+<br>
+<figure>
+<img id="answerQY5_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY5_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY5_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="questiony6" name="questiony6">
+<p><b>Jóvenes P6. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QY6_1" src="EEG17_img/YQ6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy6" name="question" value="a"> Ritmo de empalizada (wicket spikes)<br>
+<input type="radio" id="qy6" name="question" value="b"> Ondas agudas transitorias occipitales en el sueño (POSTS)<br>
+<input type="radio" id="qy6" name="question" value="c"> Ritmo posterior dominante puntiagudo<br>
+<input type="radio" id="qy6" name="question" value="d"> Puntas pequeñas y agudas (small sharp spikes)<br>
+<input type="radio" id="qy6" name="question" value="e"> Ondas lentas posteriores de la juventud<br>
+<input type="radio" id="qy6" name="question" value="f"> Ondas lambda<br>
+<input id="buttonQY6" type="button" value="¡Ya está!" onclick="checkQY6();">
+</form>
+
+<div id="after_submitQY6">
+<p id="answerQY6"></p>
+<br>
+<figure>
+<img id="answerQY6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY6_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+<h2>Variantes normales en los niños</h2>
+<p>Los niños pueden presentar patrones electroencefalográficos que parecen muy anormales, pero que son completamente normales.</p>
+
+
+<br>
+<br>
+
+
+<form id="questionc1" name="questionc1">
+<p><b>Niños P1. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QC1_1" src="EEG17_img/CQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qc1" name="question" value="a"> Ritmo posterior dominante puntiagudo<br>
+<input type="radio" id="qc1" name="question" value="b"> Respuesta prominente a la hiperventilación<br>
+<input type="radio" id="qc1" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qc1" name="question" value="d"> Ondas pequeñas agudas (small sharp spikes)<br>
+<input type="radio" id="qc1" name="question" value="e"> Fragmentos de husos del sueño<br>
+<input id="buttonQC1" type="button" value="¡Ya está!" onclick="checkQC1();">
+</form>
+
+<div id="after_submitQC1">
+<p id="answerQC1"></p>
+<br>
+<figure>
+<img id="answerQC1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQC1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQC1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<form id="questionc2" name="questionc2">
+<p><b>Niños P2. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QC2_1" src="EEG17_img/CQ2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qc2" name="question" value="a"> Husos del sueño extremos<br>
+<input type="radio" id="qc2" name="question" value="b"> Respuesta prominente a la hiperventilación<br>
+<input type="radio" id="qc2" name="question" value="c"> Estas son trenes de ondas agudas, no una variante normal<br>
+<input type="radio" id="qc2" name="question" value="d"> Ritmo mu<br>
+<input type="radio" id="qc2" name="question" value="e"> Ondas del vertex en cascada<br>
+<input id="buttonQC2" type="button" value="¡Ya está!" onclick="checkQC2();">
+</form>
+
+<div id="after_submitQC2">
+<p id="answerQC2"></p>
+<br>
+<figure>
+<img id="answerQC2_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQC2_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQC2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="questionc3" name="questionc3">
+<p><b>Niños P3. ¿Qué variante normal ves en este segmento del EEG?</b></p>
+<figure>
+	<img id="QC3_1" src="EEG17_img/CQ3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qc3" name="question" value="a"> Husos del sueño extremos<br>
+<input type="radio" id="qc3" name="question" value="b"> Ondas agudas transitorias occipitales en el sueño (POSTS)<br>
+<input type="radio" id="qc3" name="question" value="c"> Estas son ondas agudas, no una variante normal<br>
+<input type="radio" id="qc3" name="question" value="d"> Ondas lambda<br>
+<input type="radio" id="qc3" name="question" value="e"> Ritmo de empalizada (wicket spikes)<br>
+<input id="buttonQC3" type="button" value="¡Ya está!" onclick="checkQC3();">
+</form>
+
+<div id="after_submitQC3">
+<p id="answerQC3"></p>
+<br>
+<br clear="all" />
+<br>
+<p id = "afterQC3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<br>
+<br>
+
+
+<h2>Variantes normales en los bebés</h2>
+<p>Los bebés sí que tienen aspectos de su EEG que es raro. Su EEG es fundamentalmente distinto del EEG a otras edades.</p>
+
+
+<br>
+<br>
+
+<form id="questionn1" name="questionn1">
+<p><b>Neonatos P1. ¿Qué es el elemento señalado en el círculo rojo en este segmento del EEG?</b></p>
+<figure>
+	<img id="QN1_1" src="EEG17_img/NQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qn1" name="question" value="a"> Artefacto de parpadeo<br>
+<input type="radio" id="qn1" name="question" value="b"> Encoches frontales<br>
+<input type="radio" id="qn1" name="question" value="c"> 14 y 6<br>
+<input type="radio" id="qn1" name="question" value="d"> Un complejo de punta-onda<br>
+<input type="radio" id="qn1" name="question" value="e"> Ondas lambda<br>
+<input id="buttonQN1" type="button" value="¡Ya está!" onclick="checkQN1();">
+</form>
+
+<div id="after_submitQN1">
+<p id="answerQN1"></p>
+<br>
+<figure>
+<img id="answerQN1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQN1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQN1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p>El EEG en neonatos carece de la mayoría de rasgos normales del EEG en pacientes de más edad (ritmo posterior dominante, ondas del vertex, husos del sueño), algunos rasgos son normales pero serían muy anormales en los EEGs de pacientes de más edad (discontinuidad, ondas agudas transitorias), y las variantes normales varían ampliamente en un periodo de unas pocas semanas de edad gestacional. El EEG neonatal es un tema completamente distinto (y complejo) que merece su propio espacio.</p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>RESUMEN</b></h2>
+<p><b>Variantes normales: extraño pero normal.</b></p>
+
+<p><b>Las variantes normales que hemos discutido arriba son las más frecuentes y puede que quieras aprenderlas para no misclasificarlas como anormales.<br><br>Aparte de eso, hay reglas generales que te ayudarán a identificarlas: 1) si tienen siempre la misma apariencia (son monomórficas) son probablemente una variante normal; 2) si no se potencian durante la fase II del sueño, probablemente son una variante normal; 3) si no rompen el ritmo, son probablemente una variante normal; y 4) si aparecen en ráfagas o trenes con una frecuencia de al menos 6 Hz, probablemente son una variante normal. Un último consejo: si aparecen aislados, pero su morfología es igual que cuando aparecen en ráfagas en el mismo EEG, entonces el elemento que aparece aislado es probablemente una variante normal.<br><br>¡Sigamos aprendiendo!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
