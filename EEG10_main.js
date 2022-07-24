@@ -80,6 +80,35 @@ function checkQ3() {
 
 
 
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "e" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "b" && document.CC1.CC1q4.value == "d") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡¡Correcto!! <br><br>El EEG presenta ondas agudas centrotemporales izquierdas con una morfología trifásica (con tres fases) clásica. Estas ondas agudas en las regiones centrotemporales son típicas de la epilepsia de la infancia con puntas centrotemporales. La epilepsia de la infancia con puntas centrotemporales es el síndrome epiléptico más común en la infancia, así que es importante familiarizarse con él.<br><br>En el EEG las ondas agudas son típicamente centrotemporales y pueden ser bilaterales síncronas (en la derecha y la izquierda al mismo tiempo), bilaterales asíncronas (en la derecha y en la izquierda en distintos momentos), o, más raramente, unilaterales (sólo en la derecha o sólo en la izquierda). Las descargas epileptiformes en la epilepsia de la infancia con puntas centrotemporales típicamente están potenciadas durante el sueño.<br><br>La semiología típica de las crisis epilépticas en la epilepsia de la infancia con puntas centrotemporales es la de un niño o niña que se despierta por la noche con un lado de la cara temblando. El niño puede hacer ruidos guturales porque la garganta puede estar también temblando y el niño intenta hablar sin ser capaz de hablar. Algunas veces, la crisis epiléptica evoluciona causando convulsiones en un lado del cuerpo e incluso en los dos lados del cuerpo. La semiología explicada por esta familia es consistente en general con los hallazgos en el EEG (recuerda que lo que la familia describe no es necesariamente perfectamente exacto, pero la descripción en este caso es en general consistente con la semiología típica de epilepsia de la infancia con puntas centrotemporales, quizás la desviación ocular no es tan típica, pero puede ocurrir).<br><br>Es extremadamente importante preguntarse: ¿son los hallazgos del EEG hallazgos que se encuentran típicamente en pacientes con esa semiología? Las anomalías en el EEG pueden ser un hallazgo incidental que realmente no explica el evento y simplemente guia en la dirección equivocada. Esto es particularmente cierto con las puntas centrotemporales, que son tan comunes en la infancia (<a href='https://pubmed.ncbi.nlm.nih.gov/17638587/' target='_blank'>1%</a>-<a href='https://pubmed.ncbi.nlm.nih.gov/6766393/' target='_blank'>3%</a> de la población general) que pueden encontrarse como un hallazgo incidental.<br><br><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>Una crisis epiléptica no provocada y descargas epileptiformes consistentes con la semiología de la crisis epiléptica son suficientes para diagnosticar epilepsia</a>. La epilepsia de la infancia con puntas centrotemporales típicamente tiene crisis epilépticas infrecuentes y se resuelve con la edad. Por lo tanto, muchas familias deciden incluso no tratar con ninguna medicación antiepiléptica.<br><br>De forma importante, cuando las descargas epileptiformes son exclusivamente unilaterales debe pasarte por la cabeza que esto puede ser una epilepsia focal estructural que imita las características de la epilepsia de la infancia con puntas centrotemporales. En estos casos debes recomendar una resonancia magnética cerebral para evaluar la posibilidad de una lesión estructural en la región centrotemporal izquierda. Esto es especialmente importante cuando el paciente también tiene un enlentecimiento focal en la misma región. Este paciente tiene, además de las descargas epileptiformes, enlentecimiento con frecuencia delta en la región centrotemporal izquierda, lo que sugiere una lesión estructural o funcional en esa área. Haz una resonancia magnética cerebral para evaluar la posibilidad de una lesión estructural en la región centrotemporal izquierda.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("answerCC1_picture").src = "EEG10_img/CC1.5.png";
+		document.getElementById("answerCC1_picture2").src = "EEG10_img/CC1.6.png";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡No! <br><br>Mira bien al EEG. ¿Hay algo más que las descargas epileptiformes?";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("answerCC1_picture").src = "EEG10_img/CC1.5.png";
+		document.getElementById("answerCC1_picture2").src = "EEG10_img/CC1.6.png";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
+
+}
+
+
+
+
+
+
+
+
 function checkQ4() {
 
 	if (document.getElementById("q4a").checked == false && document.getElementById("q4b").checked == true && document.getElementById("q4c").checked == false && document.getElementById("q4d").checked == true && document.getElementById("q4e").checked == false && document.getElementById("q4f").checked == true) {
