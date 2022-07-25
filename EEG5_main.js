@@ -48,3 +48,32 @@ function checkQ2() {
 
 
 
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "a" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "e") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡Sí! <br><br>El EEG muestra complejos punta-onda difusos con una frecuencia aproximada de 1-2.5 Hz. Debe decirse que este ejemplo no tiene la mejor morfología de complejos punta-onda, pero entre las opciones en la pregunta, complejos de punta-onda lentos es la mejor opción.<br><br>Los últimos 2 segmentos del EEG muestran un cambio abrupto en el patrón del EEG con atenuación difusa del voltaje y actividad rápida superimpuesta. Esto es la característica principal de las crisis epilépticas generalizadas tónicas..";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("answerCC1_picture").src = "EEG5_img/CC1.6.png";
+		document.getElementById("answerCC1_picture2").src = "EEG5_img/CC1.7.png";
+		document.getElementById("afterCC1_picture").innerHTML = "La combinación de complejos de punta-onda lentos (1-2.5 Hz) y crisis epilépticas generalizadas tónicas es muy sugestiva de <a href='https://pubmed.ncbi.nlm.nih.gov/19081517/' target='_blank'>síndrome de Lennox-Gastaut</a>, uno de las encefalopatías epilépticas en niños.<br><br>¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡No! <br><br>Mira bien al EEG y, especialmente, a las porciones dentro de los rectángulos rojos";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("answerCC1_picture").src = "EEG5_img/CC1.6.png";
+		document.getElementById("answerCC1_picture2").src = "EEG5_img/CC1.7.png";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
+
+}
+
+
+
