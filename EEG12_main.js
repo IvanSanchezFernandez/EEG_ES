@@ -118,3 +118,26 @@ function checkQ5() {
 
 }
 
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "e" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "b") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡Sí! <br><br>El EEG muestra ondas agudas trifásicas centrotemporales en la derecha y en la izquierda, que son más prominentes durante el sueño (potenciadas durante el sueño). Este patrón es típico en la epilepsia de la infancia con puntas centrotemporales (previamente conocida como epilepsia Rolándica).<br><br>Este es el tipo de epilepsia más común en los niños y se asocia con crisis epilépticas en las que el niño se levanta por la noche con movimientos clónicos de una mitad de la cara y dificultad para hablar aunque está despierto. Algunas veces, esas crisis epilépticas pueden extenderse y causar crisis epilépticas clónicas en una mitad del cuerpo o crisis epilépticas clónicas generalizadas.<br><br>Los episodios en este paciente son típicos de una parasomnia (probablemente, sonambulismo o hablar en sueños). La sospecha de que los episodios sean crisis epilépticas es muy baja.<br><br><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>El diagnóstico de epilepsia es un diagnóstico clínico</a>. Para diagnosticar a alguien con epilepsia se requieren al menos 2 crisis epilépticas no provocadas separadas por al menos 24 horas. Otra opción para diagnosticar epilepsia es tener 1 crisis epiléptica no provocada y una probabilidad de subsiguientes crisis epilépticas del 60% o más. Cuando un paciente tiene una crisis epiléptica no provocada, un EEG con actividad epileptiforme que es consistente con el tipo de crisis epiléptica que el paciente presenta hace una diagnóstico de epilepsia porque la probabilidad de subsiguientes crisis epilépticas es más del 60%.<br><br>En nuestro paciente, los episodios son muy probablemente parasomnias. También podrían ser crisis epilépticas frontales porque las crisis epilépticas frontales se pueden presentar con movimientos complejos durante la noche. En este paciente el EEG se hizo para evaluar la posibilidad de crisis epilépticas frontales. La actividad epileptiforme en el EEG no es consistente con crisis epilépticas frontales. Basándose en la presentación clínica y las características del EEG, este paciente no tiene epilepsia.<br><br>¿Entonces, por qué hay actividad epileptiforme? Aproximadamente 1%-2% de la población tiene actividad epileptiforme y nunca desarrollan epilepsia como se explica en <a href='https://pubmed.ncbi.nlm.nih.gov/17638587/' target='_blank'>este artículo</a> y en <a href='https://pubmed.ncbi.nlm.nih.gov/20634716/' target='_blank'>este artículo</a>. Recuerda, el diagnóstico de epilepsia es un diagnóstico clínico. La actividad epileptiforme en el EEG es sólo el resultado de una prueba que necesita ser intrepretado en el contexto clínico del paciente.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡No! <br><br>¿Cómo se diagnostica la epilepsia? <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>El diagnóstico de epilepsia es un diagnóstico clínico</a>.";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
+
+}
+
