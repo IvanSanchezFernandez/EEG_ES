@@ -116,6 +116,39 @@ function checkQ4() {
 
 
 
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "c" && document.CC1.CC1q2.value == "e" && document.CC1.CC1q3.value == "b") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡¡Sí!!<br><br>El EEG muestra periodos frecuentes en los que el voltaje es cero o casi cero y parece como si no hubiera actividad cerebral.<br><br>Esto se llama discontinuidad: la actividad cerebral no siempre aparece continuamente como debería, pero aparece y desaparece.<br><br>La discontinuidad es un marcador inespecífico de encefalopatía moderada a severa de etiología inespecífica que puede ser causada por una lesión craneoencefálica, causas tóxico-metabólicas, medicaciones, etc.<br><br>La discontinuidad nunca es normal y en general indica mal signo pronóstico. De todas formas, si la única causa de la discontinuidad en el EEG es tóxica o metabólica, cuando el tóxico o medicación disminuye su concentración, el EEG se hace progresivamente más continuo.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡No!";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
