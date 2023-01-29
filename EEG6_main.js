@@ -91,7 +91,7 @@ function checkQ4() {
 		document.getElementById("answerQ4_picture").src = "EEG6_img/Q4.3.png";	
 		document.getElementById("answerQ4_picture2").src = "EEG6_img/Q4.4.png";		
                 document.getElementById("after_submitQ4").style.background = "lightgreen";
-		document.getElementById("afterQ4_picture").innerHTML = "Su morfología es bastante irregular y algunos tienen varios 'picos" de distinto voltaje. A pesar de que eso ocurre en polipuntas, su morfología es bastante inusual para una descarga epileptiforme. Son artefactos, probablemente relacionados con mal contacto de los electrodos P7 y T7 con el cuero cabelludo.<br><br>¡Muy bien!";
+		document.getElementById("afterQ4_picture").innerHTML = "Su morfología es bastante irregular y algunos tienen varios 'picos' de distinto voltaje. A pesar de que eso ocurre en polipuntas, su morfología es bastante inusual para una descarga epileptiforme. Son artefactos, probablemente relacionados con mal contacto de los electrodos P7 y T7 con el cuero cabelludo.<br><br>¡Muy bien!";
 
 	} else {
 		document.getElementById("after_submitQ4").style.visibility = "visible";
@@ -103,6 +103,35 @@ function checkQ4() {
 
 }
 
+
+}
+
+
+
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "b" && document.CC1.CC1q2.value == "d") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡Correcto!<br><br>Este segmento del EEG esta grabado durante el sueño. Los elementos con bordes afilados apuntan hacia abajo en un montaje referencial, por lo que son positivos en la superficie del cuero cabelludo.<br><br>Las descargas epileptiformes son generalmente negativas en superficie. La presencia de descargas positivas en la superficie del cuero cabelludo debe hacerte pensar en algo distinto a las descargas epileptiformes.<br><br>Otra regla general es que si la frecuencia de las descargas es igual o mayor de 6 Hz y no evoluciona, es probablemente alguna variante normal.<br><br>En particular, los elementos en este caso son 14 y 6, una variante normal caracterizada for tener su máximo en la región temporal posterior, tener una amplitud pequeña con morfología afilada, y una frecuencia de o 14 Hz o 6 Hz.<br><br>Otro ejemplo de 14 y 6 se presenta abajo:";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("answerCC1_picture").src = "EEG6_img/CC1.3.png";
+		document.getElementById("answerCC1_picture2").src = "EEG6_img/CC1.4.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Desafortunadamente, muchas veces 14 y 6 se misclasifican como descargas epileptiformes y los pacientes se tratan (incorrectamente) con medicaciones para las crisis epilépticas.<br><br>En gran parte, ser un buen lector de EEG es reconocer las variantes normales.<br><br>¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡No! <br><br>Otro ejemplo del mismo patrón se presenta abajo:";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("answerCC1_picture").src = "EEG6_img/CC1.3.png";
+		document.getElementById("answerCC1_picture2").src = "EEG6_img/CC1.4.png";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
 
 }
 
