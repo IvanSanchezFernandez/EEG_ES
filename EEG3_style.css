@@ -369,3 +369,68 @@ body {
 	font-size: 20px;
 }
 
+
+
+
+
+
+
+
+#CC2 {
+	margin-left: 10px;
+	margin-right: 10px;
+	background: cyan;
+	padding: 10px 10px 10px 10px;
+	width: 975px;
+	border-radius: 20px;
+	float: left;
+}
+
+
+#CC2_1 {
+	width: 900px;
+	heigth: 900px;
+	float: left;
+	border-radius: 20px;
+}
+
+
+#buttonCC2 {
+	background: green;
+	border: black;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: 0.25s;
+	margin-top: 15px;
+}
+
+
+#buttonCC2:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+}
+
+
+#answerCC2_picture {
+	width: 375px;
+	heigth: 300px;
+	float: left;
+	border-radius: 20px;
+}
+
+
+#after_submitCC2 {
+	visibility: hidden;
+	padding: 10px 10px 10px 10px;
+	width: 425px;
+	heigth: 900px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+}
+

@@ -141,14 +141,25 @@ function checkCC1() {
 
 
 
+function checkCC2() {
 
+	if (document.CC2.CC2q1.value == "c" && document.CC2.CC2q2.value == "a") {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "¡Correcto!<br><br>Este segmento del EEG muestra sueño al principio (¿puedes ver los husos del sueño?), después un periodo con una mezcla de distintas frecuencias, algunas de ellas de alta amplitud, y, finalmente, artefacto muscular. Esto representa una transición del sueño a la vigilia y el brote de distintas frecuencias se llama hipersincronía hipnopómpica.<br><br>En niños, las hipersincronías hipnopómpicas (transiciones del sueño a la vigilia) y las hipersincronías hipnagógicas (transiciones de la vigilia al sueño) pueden aparecer muy intimidantes con una mezcla de distintos elementos y ondas de alta amplitud. Son completamente normales.<br><br>Otro ejemplo de hipersincronía hipnopómpica normal se presenta abajo:";
+		document.getElementById("after_submitCC2").style.background = "lightgreen";
+		document.getElementById("answerCC2_picture").src = "EEG3_img/CC2.2.png";
+		document.getElementById("afterCC2_picture").innerHTML = "¡Muy bien!";
 
+}	else {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "¡No!<br><br>Otro ejemplo del mismo patrón se presenta abajo:";
+		document.getElementById("after_submitCC2").style.background = "red";
+		document.getElementById("answerCC2_picture").src = "EEG3_img/CC2.2.png";
+		document.getElementById("afterCC2_picture").innerHTML = "¡Inténtalo de nuevo!";
 
+}
 
-
-
-
-
+}
 
 
 
