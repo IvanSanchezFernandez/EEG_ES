@@ -210,3 +210,26 @@ function checkQ7() {
 
 
 
+
+
+
+
+
+function checkCC2() {
+
+	if (document.CC2.CC2q1.value == "a" && document.CC2.CC2q2.value == "b") {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "¡Correcto!<br><br>Este segmento del EEG muestra elementos con contornos afilados en el lóbulo temporal (en el lóbulo temporal izquierdo en el primer segmento del EEG y en el lóbulo temporal derecho en el segundo segmento del EEG). La morfología no es típica de ondas agudas y no rompe el ritmo. Es realmente un ritmo de 6 Hz o más que no evoluciona, lo cual es muy consistente con una variante normal. Muy probablemente este patrón representa puntas en forma de palo (wicket spikes, una variante normal) o brotes de actividad theta temporal (otra variante normal).<br><br>La semiología de ver formas geométricas simples y manchas de colores es típica de crisis epilépticas occipitales, pero también de migrañas. Cuando las crisis epilépticas temporales tienen fenómenos visuales, son típicamente formas más elaboradas.";
+		document.getElementById("after_submitCC2").style.background = "lightgreen";
+		document.getElementById("afterCC2_picture").innerHTML = "¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "¡No!";
+		document.getElementById("after_submitCC2").style.background = "red";
+		document.getElementById("afterCC2_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
+
+}
+
