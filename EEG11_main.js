@@ -88,3 +88,32 @@ function checkQ3() {
 
 
 
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "e" && document.CC1.CC1q2.value == "c") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡¡Correcto!! <br><br>Muchas crisis epilépticas no se ajustan perfectamente a las categorías más típicas (crisis the ausencia típicas, crisis epilépticas con polipuntas rápidas, o crisis epilépticas focales con evolución en frecuencia y amplitud).<br><br>Los primeros tres segmentos del EEG muestran complejos de punta-onda de 2.5 Hz a 3 Hz irregulares con evolución en frecuencia y amplitud y desaparición progresiva como ondas lentas difusas. En este paciente, estas crisis epilépticas tuvieron una presentación clínica con mirada perdida con el cuerpo tenso.<br><br>Los dos últimos segmentos del EEG muestran un brote de complejos punta-onda generalizados con predominancia frontal. En este paciente, estas crisis epilépticas tuvieron una presentación clínica de una breve sacudida de todo el cuerpo similar a una crisis epiléptica mioclónica.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Muy bien!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "¡No!";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("afterCC1_picture").innerHTML = "¡Inténtalo de nuevo!";
+
+}
+
+}
+
+
+
+
+
+
+
